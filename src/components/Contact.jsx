@@ -60,9 +60,9 @@ const Contact = () => {
             Contact Us
           </h1>
 
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center md:flex-row flex-col gap-8 md:gap-5">
             {/* Google Map */}
-            <div className="w-1/2 h-96 relative rounded-lg overflow-hidden shadow-xl">
+            <div className="md:w-1/2 w-full h-96 relative rounded-lg overflow-hidden shadow-xl">
               <iframe
                 title="Google Map"
                 className="absolute inset-0 w-full h-full"
@@ -75,7 +75,7 @@ const Contact = () => {
             {/* Contact Form */}
             <div
               ref={formRef}
-              className="w-1/2 p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-2xl ml-8"
+              className="md:w-1/2 w-full p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-2xl"
             >
               <form className="space-y-6">
                 <div className="relative">
