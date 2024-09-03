@@ -17,7 +17,7 @@ const Hero = () => {
       className="pt-8 pb-20 md:pt-10 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] overflow-x-clip"
     >
       <div className="container ">
-        <div className="md:flex items-baseline gap-20 mt-40 w-full h-full">
+        <div className="md:flex gap-20 mt-40 w-full h-full">
           <div className="md:w-[500px]">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
               Pathway to your Dream Project
