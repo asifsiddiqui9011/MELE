@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import cards from '../../public/Data';
+import cards from '../assets/Data.js';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
