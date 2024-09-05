@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import cards from '../assets/Data.js';
+import {cards }from '../Data/Data.jsx';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +44,7 @@ const Carousel = () => {
         {cards.map((card, index) => (
           <div key={index} className={`w-full md:w-1/2 lg:w-1/3 flex-shrink-0 p-4`}>
             {/* Updated hover effect with ease-in-out transition */}
-            <div className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center h-96 transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-300 hover:via-lightblue hover:to-pink-300">
+            <div className="bg-white shadow-md  shadow-black rounded-lg p-6 flex flex-col items-center h-96 transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-300 hover:via-lightblue hover:to-pink-300">
               <img src={card.image} alt={card.title} className="mb-4 w-16 h-16" />
               <h3 className="text-xl font-semibold mb-2">{card.title}</h3>
               <p className="text-center text-gray-600">{card.content}</p>

@@ -4,7 +4,7 @@ import StatsSection from "./StatsSection";
 
 const Services = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)]">
       <div className="section-title"> Our Services</div>
 
       <div className="w-full p-6">
