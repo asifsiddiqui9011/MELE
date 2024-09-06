@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[600px] md:w-[600px] md:flex-1 relative">
-            <ImageCollage />
+            {/* <ImageCollage /> */}
           </div>
         </div>
       </div>
