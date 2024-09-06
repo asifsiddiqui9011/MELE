@@ -24,7 +24,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-blue-900 text-white py-8 relative">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      {/* Main Footer */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        
         {/* ABOUT US */}
         <div>
           <h4 className="text-lg font-semibold mb-4 border-b-2 border-white w-1/3">ABOUT US</h4>
@@ -70,15 +72,21 @@ const Footer = () => {
           <p className="mb-4">
             Connect with us on our official LinkedIn page and share your thoughts to improve our service.
           </p>
-          <div className="flex">
-            <input type="email" placeholder="Email" className="p-2 flex-grow rounded-l-md border-none focus:outline-none text-black" />
-            <button className="p-2 bg-white text-blue-900 rounded-r-md hover:bg-gray-200">Subscribe</button>
+          <div className="flex flex-col sm:flex-row w-full space-y-2 sm:space-y-0">
+            <input
+              type="email"
+              placeholder="Email"
+              className="p-2 w-full flex-grow rounded border-none focus:outline-none text-black"
+            />
+            <button className="p-2 bg-white text-blue-900 md:ml-1 w-full sm:w-auto hover:bg-gray-200 flex-shrink-0 rounded">
+              Subscribe
+            </button>
           </div>
         </div>
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gray-800 text-center py-4 mt-8">
+      <div className="bg-gray-800 text-center py-4 mt-8 text-sm sm:text-base">
         <p>Copyright © 2024 MELE Company Website. All Rights Reserved.</p>
       </div>
 
@@ -96,4 +104,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
