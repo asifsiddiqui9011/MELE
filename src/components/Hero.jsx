@@ -1,21 +1,10 @@
 "use client";
-import { useRef } from "react";
-import { useScroll, useTransform } from "framer-motion";
 import { FaAngleRight } from "react-icons/fa6";
 import ImageCollage from "./ImageCollage";
 
 const Hero = () => {
-  const heroRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: heroRef,
-    offset: ["start end", "end start"],
-  });
-
   return (
-    <section
-      ref={heroRef}
-      className="pt-8 pb-20 md:pt-10 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] overflow-x-clip"
-    >
+    <section className="pt-8 pb-20 md:pt-10 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] overflow-x-clip">
       <div className="container ">
         <div className="md:flex gap-20 mt-40 w-full h-full">
           <div className="md:w-[500px]">
