@@ -1,10 +1,11 @@
 "use client";
 import { FaAngleRight } from "react-icons/fa6";
 import ImageCollage from "./ImageCollage";
+import LogoTicker from "./LogoTicker";
 
 const Hero = () => {
   return (
-    <section className="pt-8 pb-20 md:pt-10 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] overflow-x-clip">
+    <section className="pt-8 pb-20 md:pt-10 md:pb-10 h-svh bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] overflow-x-clip">
       <div className="container ">
         <div className="md:flex gap-20 mt-40 w-full h-full">
           <div className="md:w-[500px]">
@@ -24,11 +25,12 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="mt-20 md:mt-0 md:h-[600px] md:w-[600px] md:flex-1 relative">
+          <div className="mt-20 md:mt-0 md:h-[400px] md:w-[600px] md:flex-1 relative">
             <ImageCollage />
           </div>
         </div>
       </div>
+      <LogoTicker/>
     </section>
   );
 };

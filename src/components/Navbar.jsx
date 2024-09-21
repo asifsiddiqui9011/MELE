@@ -92,7 +92,7 @@ const Navbar = () => {
                 <li key={id} className="py-2">
                   <a
                     href={link}
-                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500"
+                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
                   >
                     {name}
                   </a>

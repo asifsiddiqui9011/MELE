@@ -94,6 +94,7 @@ const Contact = () => {
                   <input
                     type="tel"
                     className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"
+
                   />
                 </div>
                 <div className="relative">
