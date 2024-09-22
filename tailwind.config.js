@@ -22,7 +22,7 @@ export default {
         'spin-slow': 'spin 8s linear infinite', // Slow spin effect
         'float': 'float 5s ease-in-out infinite', // Floating effect
         'pulse-slow': 'pulse 3s ease-in-out infinite', // Slow pulse effect
-        'scroll-once': 'scrollOnce 30s linear infinite',
+        'scroll-once': 'scrollOnce 20s linear infinite',
         fadeIn: 'fadeIn 2s ease-in-out',
         bounceSmall: 'bounceSmall 2s infinite',
         float: 'float 3s ease-in-out infinite',
