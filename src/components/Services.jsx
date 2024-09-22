@@ -18,11 +18,11 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="flex items-center justify-center mb-20">
+      <div className="flex items-center justify-center pb-10">
         <Carousel2 />
       </div>
       <div>
-        <StatsSection />
+        {/* <StatsSection /> */}
       </div>
     </div>
   );

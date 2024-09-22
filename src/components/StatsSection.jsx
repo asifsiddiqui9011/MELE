@@ -18,7 +18,7 @@ const StatsSection = () => {
 
   return (
     <div
-      className="bg-black bg-center text-white py-12"
+      className="bg-black bg-opacity-10 bg-center text-white py-5"
       style={{ backgroundImage: `url('/path/to/your/background-image.jpg')` }}
       ref={ref} // Attach ref to the section to observe when it comes into view
     >
@@ -29,11 +29,11 @@ const StatsSection = () => {
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center">
               {/* Animated Icon */}
-              <div className="text-6xl mb-4 animate-bounce transition duration-500 ease-in-out transform hover:scale-110">
+              <div className="text-5xl mb-3 animate-bounce transition duration-500 ease-in-out transform hover:scale-110">
                 {stat.icon}
               </div>
               {/* CountUp for counter effect */}
-              <h3 className="text-4xl font-bold">
+              <h3 className="text-3xl font-bold">
                 {inView && (
                   <CountUp start={0} end={stat.value} duration={4} />
                 )}

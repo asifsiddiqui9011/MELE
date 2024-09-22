@@ -9,16 +9,21 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Services from "./components/Services";
 import FAQ from "./components/FAQ";
+import bgimg from './assets/bg.jpg'
+import StatsSection from "./components/StatsSection";
+import BookNow from "./components/BookNow";
 
 const App = () => {
   return (
-    <main>
+    <main className="bg-cover bg-fixed bg-center bg-no-repeat" style={{backgroundImage: `url(${bgimg})`}}>
       <Navbar />
       <Hero />
       {/* <LogoTicker /> */}
       <About />
       <Services />
+      <StatsSection/>
       <Projects />
+      <BookNow/>
       <Pricing />
       <OurClients />
       <ContactUs />

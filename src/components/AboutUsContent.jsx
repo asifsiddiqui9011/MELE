@@ -3,7 +3,7 @@ import AboutUs from '../assets/aboutus.jpeg'
 
 const AboutUsContent = () => {
   return (
-    <div className="container mx-auto py-10 px-4 flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-10">
+    <div className="container  mx-auto py-10 px-4 flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-10">
       {/* Text Section */}
       <div className="lg:w-1/2 text-center lg:text-left">
         <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 animate-fadeIn">

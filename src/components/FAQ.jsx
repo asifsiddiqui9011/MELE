@@ -37,10 +37,10 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-gray-900 py-10">
+    <div className="bg-black bg-opacity-60 py-10">
       <div className="container mx-auto px-4">
         {/* FAQ Header */}
-        <h2 className="text-3xl lg:text-4xl font-bold text-blue-400 mb-8 text-center">
+        <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8 text-center">
           ＦＡＱ
         </h2>
 
@@ -48,7 +48,7 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border-b border-gray-700 py-4 cursor-pointer transition-colors duration-300"
+            className="border-b border-white-700 py-4 cursor-pointer transition-colors duration-300"
             onClick={() => toggleFAQ(index)}
           >
             {/* Question */}
@@ -69,7 +69,7 @@ const FAQ = () => {
               animate={{
                 height: activeIndex === index ? "auto" : 0,
               }}
-              className="overflow-hidden text-gray-400"
+              className="overflow-hidden text-white"
             >
               <p className="mt-2 px-2">{faq.answer}</p>
             </motion.div>

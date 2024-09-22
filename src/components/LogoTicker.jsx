@@ -26,7 +26,7 @@ const LogoTicker = () => {
     };
   }, []);
   return (
-    <div className={`py-4 md:py-8 pb-10 transition-all duration-1000 ease-in-out `} style={{backgroundColor: ` rgba(255, 255, 255, ${bgOpacity})`}} >
+    <div className={`py-4 md:py-8 pb-5 transition-all duration-1000 ease-in-out `} style={{backgroundColor: ` rgba(255, 255, 255, ${bgOpacity})`}} >
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div

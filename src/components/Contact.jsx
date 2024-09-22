@@ -1,10 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 const Contact = () => {
   const cursorRef = useRef(null);
   const formRef = useRef(null);
   const headerRef = useRef(null);
+  const [contactUsData,setContactUsData] = useState({})
+
+  const changeHandler = (event)=>{
+    setContactUsData((prev)=>({...prev,[event.target.name]:event.target.value}))
+  }
 
   useEffect(() => {
     // Custom cursor animation
@@ -49,6 +54,11 @@ const Contact = () => {
     );
   }, []);
 
+  const submitData = (event)=>{
+      event.preventDefault()
+      console.log(contactUsData,"contactUsData")
+  }
+
   return (
     <section className="bg-gradient-to-b from-white to-[#D2DCFF] py-24 overflow-x-clip relative">
       <div className="container mx-auto">
@@ -77,7 +87,7 @@ const Contact = () => {
               ref={formRef}
               className="md:w-1/2 w-full p-10 bg-white bg-opacity-10 backdrop-blur-lg rounded-lg shadow-2xl"
             >
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={submitData}>
                 <div className="relative">
                   <label className="block text-sm font-medium text-gray-700">
                     Name
@@ -85,6 +95,9 @@ const Contact = () => {
                   <input
                     type="text"
                     className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"
+                    name="name"
+                    onChange={changeHandler}
+                    required
                   />
                 </div>
                 <div className="relative">
@@ -92,8 +105,13 @@ const Contact = () => {
                     Contact Number
                   </label>
                   <input
-                    type="tel"
+                    type="text"
                     className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"
+                    name="phone"
+                    onChange={changeHandler}
+                    required
+                    title="Enter a valid number of 10 digits [0-9]" 
+                    pattern="[6789][0-9]{9}"
 
                   />
                 </div>
@@ -104,18 +122,30 @@ const Contact = () => {
                   <input
                     type="email"
                     className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"
+                    name="email"
+                    onChange={changeHandler}
+                    required
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Enter a valid email address (e.g., user@example.com)"
                   />
                 </div>
                 <div className="relative">
                   <label className="block text-sm font-medium text-gray-700">
                     Message
                   </label>
-                  <textarea className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"></textarea>
+                  <textarea 
+                      className="mt-1 block w-full rounded-lg bg-white/70 border-none shadow-lg focus:outline-none p-2"
+                      name="message"
+                      onChange={changeHandler}
+                      required
+                      minLength="4"
+                      title="Message must be at least 4 characters long">
+                   </textarea>
                 </div>
                 <div className="flex items-center justify-center">
                   <button
                     className="bg-black text-white px-4 py-2 rounded-full font-medium hover:bg-[#001E80]  transition-all duration-150"
-                    onClick={() => window.open("", "_blank")}
+                    type="submit"
                   >
                     Let's Connect
                   </button>
