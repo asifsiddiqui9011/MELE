@@ -1,82 +1,88 @@
+/* Main container */
 .banner {
-  width: 100%;
-  height: 600px;
-  text-align: center;
   overflow: hidden;
+  white-space: nowrap;
   position: relative;
-}
-.banner .slider {
-  position: absolute;
-  width: 200px;
-  height: 250px;
-  top: 10%;
-  left: calc(50% - 100px);
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
-  animation: autoRun 25s linear infinite;
-  z-index: 2;
-}
-@keyframes autoRun {
-  from {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
-  }
-  to {
-    transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
-  }
-}
-
-.banner .slider .item {
-  position: absolute;
-  inset: 0 0 0 0;
-  transform: rotateY(
-      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-    )
-    translateZ(480px);
-}
-.banner .slider .item img {
-  width: 150px;
-  height: 150px;
-}
-.banner .content {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1400px, 100vw);
-  height: max-content;
+  width: 100%;
+  height: 150px; /* Adjust height for default */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  z-index: 1;
+  background-color: white; /* Optional */
 }
 
-@media screen and (max-width: 1023px) {
-  .banner .slider {
-    width: 160px;
-    height: 200px;
-    left: calc(50% - 80px);
+.slider {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 20px; /* Default space between logos */
+}
+
+.item img {
+  height: 100px; /* Default image size */
+  object-fit: contain;
+}
+
+/* Scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start fully off the right */
   }
-  .banner .slider .item {
-    transform: rotateY(
-        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-      )
-      translateZ(300px);
+  80% {
+    transform: translateX(-100%); /* End off the left */
+  }
+  100% {
+    transform: translateX(-100%); /* Hold the position before restart */
   }
 }
-@media screen and (max-width: 767px) {
+
+/* Responsive styling */
+
+/* Large screens (desktops and laptops) */
+@media (min-width: 1024px) {
   .banner {
-    height: 300px;
-  }
-  .banner .slider {
-    width: 100px;
     height: 150px;
-    left: calc(50% - 50px);
   }
-  .banner .slider .item {
-    transform: rotateY(
-        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-      )
-      translateZ(180px);
+
+  .item img {
+    height: 120px; /* Slightly larger images */
+  }
+
+  .item {
+    margin: 0 30px; /* Increased spacing between logos */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .banner {
+    height: 120px;
+  }
+
+  .item img {
+    height: 90px; /* Adjust image size for tablets */
+  }
+
+  .item {
+    margin: 0 15px; /* Reduced space between logos */
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  .banner {
+    height: 100px; /* Smaller height for mobile */
+  }
+
+  .item img {
+    height: 70px; /* Smaller image size for mobile */
+  }
+
+  .item {
+    margin: 0 10px; /* Reduced space between logos for smaller screens */
   }
 }
