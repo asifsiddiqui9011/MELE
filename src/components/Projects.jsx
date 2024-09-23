@@ -5,7 +5,7 @@ const Projects = () => {
 
   
 
-  return <div className="w-full bg-white ">
+  return <div className="w-full bg-white " id="portfolio"> 
 
 <div><HeaderSectionOfProject/></div>
 

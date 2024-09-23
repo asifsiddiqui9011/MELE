@@ -4,7 +4,7 @@ import AboutUsContent from "./AboutUsContent";
 
 const About = () => {
   return (
-    <div className="w-full bg-white   overflow-hidden ">
+    <div className="w-full bg-white   overflow-hidden " id="about">
       <h2 className="section-title">About Us</h2>
       <AboutUsContent/>
     </div>

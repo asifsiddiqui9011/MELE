@@ -18,7 +18,7 @@ const BookNow = () => {
     
         <a 
           href="#contact"
-          className="inline-block px-8 py-3 text-lg font-semibold text-blue-600 bg-white rounded-md shadow-md hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-blue-300 animate-slideUp delay-200 transition-transform duration-300 transform hover:scale-105"
+          className="inline-block px-8 py-3 text-lg font-semibold text-blue-600 bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none active:ring-4 focus:ring-blue-300 animate-slideUp delay-200 transition-transform duration-300 transform hover:scale-105"
         >
           Book Now
         </a>
