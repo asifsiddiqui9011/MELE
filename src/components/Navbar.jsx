@@ -62,10 +62,10 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 w-full z-50">
-      <div className="container mx-auto mt-5 px-4 md:px-8 w-full">
+      <div className=" px-4 md:px-8 w-full">
         <div
           className={`flex items-center justify-between transition-all duration-300 ${
-            isScrolled ? "backdrop-blur-lg bg-white/50" : "bg-gray-100"
+            isScrolled ? "backdrop-blur-lg bg-white/50" : "bg-transparent"
           } rounded-full px-4 py-2 w-full`}
         >
           {/* Logo section */}
