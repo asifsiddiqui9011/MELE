@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import './footer.css';
+import phone from './phone.png';
+import email from './email.svg';
 
 const Footer = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -23,13 +26,29 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-blue-900 text-white py-8 relative">
+    <footer className="py-8 relative">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        
+        {/* CONTACT US */}
+        <div>
+          <h4 className="text-lg text-white font-semibold mb-4 w-full">CONTACT US</h4>
+          <p>Mandavelli<br />Near Kapaleshwar Temple,<br />Chennai, India</p>
+          <p className="mt-2">
+            <img src={phone} alt="Phone icon" className="inline-block w-5 h-5 mr-2" />: +91 9360231608
+          </p>
+          <p><img src={email} alt="Email icon" className="inline-block w-5 h-5 mr-2" /> : mele.ceo13@gmail.com</p>
+          <div className="flex space-x-4 mt-4">
+            <a href="#" className="hover:text-blue-400"><i className="fab fa-facebook"></i></a>
+            <a href="#" className="hover:text-blue-400"><i className="fab fa-twitter"></i></a>
+            <a href="#" className="hover:text-blue-400"><i className="fab fa-linkedin"></i></a>
+            <a href="#" className="hover:text-blue-400"><i className="fab fa-instagram"></i></a>
+            <a href="#" className="hover:text-blue-400"><i className="fab fa-google"></i></a>
+          </div>
+        </div>
+
         {/* ABOUT US */}
         <div>
-          <h4 className="text-lg font-semibold mb-4 border-b-2 border-white w-1/3">ABOUT US</h4>
+          <h4 className="text-lg text-white font-semibold mb-4 w-full">ABOUT US</h4>
           <ul>
             <li><a href="/" className="hover:text-blue-400">Home</a></li>
             <li><a href="/about" className="hover:text-blue-400">About Us</a></li>
@@ -41,7 +60,7 @@ const Footer = () => {
 
         {/* USEFUL LINKS */}
         <div>
-          <h4 className="text-lg font-semibold mb-4 border-b-2 border-white w-1/3">USEFUL LINKS</h4>
+          <h4 className="text-lg text-white font-semibold mb-4 w-full">USEFUL LINKS</h4>
           <ul>
             <li><a href="/portfolio" className="hover:text-blue-400">Portfolio</a></li>
             <li><a href="/team" className="hover:text-blue-400">Team</a></li>
@@ -51,34 +70,19 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CONTACT US */}
+        {/* CONNECT WITH US - Updated Email Subscription Section */}
         <div>
-          <h4 className="text-lg font-semibold mb-4 border-b-2 border-white w-1/3">CONTACT US</h4>
-          <p>Mandavelli<br />Near Kapaleshwar Temple,<br />Chennai, India</p>
-          <p className="mt-2"><strong>Phone:</strong> +91 9360231608</p>
-          <p><strong>Email:</strong> mele.ceo13@gmail.com</p>
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-facebook"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-linkedin"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-google"></i></a>
-          </div>
-        </div>
-
-        {/* CONNECT WITH US */}
-        <div>
-          <h4 className="text-lg font-semibold mb-4 border-b-2 border-white w-1/3">CONNECT WITH US</h4>
+          <h4 className=" text-white font-semibold mb-4 w-full">CONNECT WITH US</h4>
           <p className="mb-4">
             Connect with us on our official LinkedIn page and share your thoughts to improve our service.
           </p>
-          <div className="flex flex-col sm:flex-row w-full space-y-2 sm:space-y-0">
+          <div className="subscribe-sec flex flex-col sm:flex-row items-center">
             <input
               type="email"
-              placeholder="Email"
-              className="p-2 w-full flex-grow rounded border-none focus:outline-none text-black"
+              placeholder="Enter your email address"
+              className="p-2 email"
             />
-            <button className="p-2 bg-white text-blue-900 md:ml-1 w-full sm:w-auto hover:bg-gray-200 flex-shrink-0 rounded">
+            <button className="btn-subs p-2 md:ml-1">
               Subscribe
             </button>
           </div>
@@ -86,7 +90,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-gray-800 text-center py-4 mt-8 text-sm sm:text-base">
+      <div className=" text-center pt-8 copyright  text-sm sm:text-base">
         <p>Copyright © 2024 MELE Company Website. All Rights Reserved.</p>
       </div>
 
