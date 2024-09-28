@@ -4,13 +4,13 @@ const HeaderSectionOfProject = () => {
   return (
     <div className="text-center py-10 px-4">
       {/* Title Section with Decorative Elements */}
-      <div className="  relative inline-block mb-4">
-        <h1 className="  text-3xl lg:text-5xl font-semibold section-title relative z-10 inline-block">
+      <div className="  relative  mb-4">
+        <h1 className="  text-3xl lg:text-5xl  section-title relative pb-2 ">
           Our Projects
         </h1>
         {/* Decorative Brackets */}
-        <div className="absolute top-1/2 transform -translate-y-1/2 left-0 w-6 h-1 bg-blue-900 animate-expand" />
-        <div className="absolute top-1/2 transform -translate-y-1/2 right-0 w-6 h-1 bg-blue-900 animate-expand" />
+        {/* <div className="absolute top-1/2 transform -translate-y-1/2 left-0 w-6 h-1 bg-blue-900 animate-expand" />
+        <div className="absolute top-1/2 transform -translate-y-1/2 right-0 w-6 h-1 bg-blue-900 animate-expand" /> */}
       </div>
 
       {/* Subtitle Paragraph */}

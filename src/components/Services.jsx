@@ -6,7 +6,7 @@ import Carousel2 from "./Carousel2";
 const Services = () => {
   return (
     <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] " id="services">
-      <div className="section-title"> Our Services</div>
+      <div className="section-title pt-2"> Our Services</div>
 
       <div className="w-full p-6">
         <p className="text-center">
@@ -20,9 +20,6 @@ const Services = () => {
 
       <div className="flex items-center justify-center pb-10">
         <Carousel2 />
-      </div>
-      <div>
-        {/* <StatsSection /> */}
       </div>
     </div>
   );
