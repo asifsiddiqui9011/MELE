@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import Logo from "../assets/company_logo.png";
 import ResponsiveMenu from "./ResponsiveMenu";
+import {Link as ScrollLink} from "react-scroll"
 
 export const MenuLinks = [
   {
@@ -12,17 +13,17 @@ export const MenuLinks = [
   {
     id: 2,
     name: "About",
-    link: "#about",
+    link: "about",
   },
   {
     id: 3,
     name: "Services",
-    link: "#services",
+    link: "services",
   },
   {
     id: 4,
     name: "Portfolio",
-    link: "#portfolio",
+    link: "portfolio",
   },
   {
     id: 5,
@@ -32,12 +33,12 @@ export const MenuLinks = [
   {
     id: 6,
     name: "contact",
-    link: "#contact",
+    link: "contact",
   },
   {
     id: 7,
     name: "FAQs",
-    link: "#faqs",
+    link: "faqs",
   },
 ];
 
@@ -62,10 +63,10 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 w-full z-50">
-      <div className="container mx-auto mt-5 px-4 md:px-8 w-full">
+      <div className=" px-4 md:px-8 w-full">
         <div
           className={`flex items-center justify-between transition-all duration-300 ${
-            isScrolled ? "backdrop-blur-lg bg-white/50" : "bg-gray-100"
+            isScrolled ? "backdrop-blur-lg bg-white/50" : "bg-transparent"
           } rounded-full px-4 py-2 w-full`}
         >
           {/* Logo section */}
@@ -90,12 +91,15 @@ const Navbar = () => {
             <ul className="flex items-center gap-6">
               {MenuLinks.map(({ id, name, link }) => (
                 <li key={id} className="py-2">
-                  <a
-                    href={`${link}`}
+                  <ScrollLink
+                    to={`${link}`}
+                    smooth={true}
+                    duration={300}
+                    offset={-70}
                     className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
                   >
                     {name}
-                  </a>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>

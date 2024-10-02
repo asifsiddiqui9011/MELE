@@ -30,7 +30,7 @@ const LogoTicker = () => {
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div
-            className="flex gap-14 flex-none pr-14 text-gray-500"
+            className="flex gap-14 flex-none pr-14 text-black"
             animate={{ translateX: "-50%" }}
             transition={{
               duration: 10,
@@ -43,7 +43,7 @@ const LogoTicker = () => {
               <img
                 src={acmeLogo}
                 alt="Acme Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image "
               />
               <span>Web Development</span>
             </div>
@@ -51,7 +51,7 @@ const LogoTicker = () => {
               <img
                 src={quantumLogo}
                 alt="Quantum Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image"
               />
               <span>Artificial Intelligence</span>
             </div>
@@ -59,7 +59,7 @@ const LogoTicker = () => {
               <img
                 src={echoLogo}
                 alt="Echo Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image"
               />
               <span>Machine Learning</span>
             </div>
@@ -67,7 +67,7 @@ const LogoTicker = () => {
               <img
                 src={celestialLogo}
                 alt="Celestial Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image "
               />
               <span>Cloud</span>
             </div>
@@ -78,7 +78,7 @@ const LogoTicker = () => {
               <img
                 src={acmeLogo}
                 alt="Acme Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image"
               />
               <span>Web Development</span>
             </div>
@@ -86,7 +86,7 @@ const LogoTicker = () => {
               <img
                 src={quantumLogo}
                 alt="Quantum Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image "
               />
               <span>Artificial Intelligence</span>
             </div>
@@ -94,7 +94,7 @@ const LogoTicker = () => {
               <img
                 src={echoLogo}
                 alt="Echo Logo"
-                className="logo-ticker-image grayscale"
+                className="logo-ticker-image "
               />
               <span>Machine Learning</span>
             </div>

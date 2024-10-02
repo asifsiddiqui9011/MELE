@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
-import LogoTicker from "./components/LogoTicker";
 import Pricing from "./components/Pricing";
-import Footer from "./components/Footer";
+import Footer from "./components/footer_section/Footer";
 import Navbar from "./components/Navbar";
 import ContactUs from "./components/Contact";
 import OurClients from "./components/OurClients";
@@ -18,7 +17,6 @@ const App = () => {
     <main className="bg-cover bg-fixed bg-center bg-no-repeat" style={{backgroundImage: `url(${bgimg})`}}>
       <Navbar />
       <Hero />
-      {/* <LogoTicker /> */}
       <About />
       <Services />
       <StatsSection/>
