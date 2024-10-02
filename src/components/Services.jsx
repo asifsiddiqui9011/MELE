@@ -5,7 +5,7 @@ import Carousel2 from "./Carousel2";
 
 const Services = () => {
   return (
-    <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] ">
+    <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] " id="services">
       <div className="section-title"> Our Services</div>
 
       <div className="w-full p-6">

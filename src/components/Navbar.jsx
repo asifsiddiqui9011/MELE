@@ -7,37 +7,37 @@ export const MenuLinks = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    link: "/",
   },
   {
     id: 2,
     name: "About",
-    link: "/#about",
+    link: "#about",
   },
   {
     id: 3,
     name: "Services",
-    link: "/#services",
+    link: "#services",
   },
   {
     id: 4,
     name: "Portfolio",
-    link: "/#portfolio",
+    link: "#portfolio",
   },
   {
     id: 5,
     name: "Careers",
-    link: "/#careers",
+    //link: "https://docs.google.com/forms/d/e/1FAIpQLSeerLzi0SWlZO74Mw3S6VH4gNQ2A2Q6PUs9kfUzn046Al0VCg/viewform",
   },
   {
     id: 6,
-    name: "Contact",
-    link: "/#contact",
+    name: "contact",
+    link: "#contact",
   },
   {
     id: 7,
     name: "FAQs",
-    link: "/#faqs",
+    link: "#faqs",
   },
 ];
 
@@ -91,7 +91,7 @@ const Navbar = () => {
               {MenuLinks.map(({ id, name, link }) => (
                 <li key={id} className="py-2">
                   <a
-                    href={link}
+                    href={`${link}`}
                     className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
                   >
                     {name}

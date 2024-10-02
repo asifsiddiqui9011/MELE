@@ -37,7 +37,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-black bg-opacity-60 py-10">
+    <div className="bg-black bg-opacity-60 py-10" id="faqs">
       <div className="container mx-auto px-4">
         {/* FAQ Header */}
         <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8 text-center">
@@ -55,7 +55,7 @@ const FAQ = () => {
             <div className="flex justify-between items-center">
               <h3 className="text-xl text-white">{faq.question}</h3>
               <div
-                className={`transform transition-transform duration-300 ${
+                className={`transform transition-transform duration-300  ${
                   activeIndex === index ? "rotate-45" : "rotate-0"
                 } text-blue-400 text-2xl`}
               >
@@ -71,7 +71,7 @@ const FAQ = () => {
               }}
               className="overflow-hidden text-white"
             >
-              <p className="mt-2 px-2">{faq.answer}</p>
+              <p className="mt-2 px-2 backdrop-blur-3xl">{faq.answer}</p>
             </motion.div>
           </div>
         ))}

@@ -26,7 +26,10 @@ const App = () => {
       <BookNow/>
       <Pricing />
       <OurClients />
+      <section id="contact">
       <ContactUs />
+      </section>
+     
       <FAQ />
       <Footer />
     </main>
