@@ -2,6 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './footer.css';
 import phone from './phone.png';
 import email from './email.svg';
+import { BiLogoInstagram } from "react-icons/bi";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaArrowUp } from 'react-icons/fa6';
+import { BsTelephone } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
+
+
+
+
 
 const Footer = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -33,17 +44,16 @@ const Footer = () => {
         <div>
           <h4 className="text-lg text-white font-semibold mb-4 w-full">CONTACT US</h4>
           <p>Mandavelli<br />Near Kapaleshwar Temple,<br />Chennai, India</p>
-          <p className="mt-2">
-            <img src={phone} alt="Phone icon" className="inline-block w-5 h-5 mr-2" />: +91 9360231608
-          </p>
-          <p><img src={email} alt="Email icon" className="inline-block w-5 h-5 mr-2" /> : mele.ceo13@gmail.com</p>
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-facebook"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-twitter"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-linkedin"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-instagram"></i></a>
-            <a href="#" className="hover:text-blue-400"><i className="fab fa-google"></i></a>
-          </div>
+                  <p className="flex items-center mt-2">
+                      <BsTelephone size={20} />
+                      <span className="ml-2">:+91 9360231608</span>
+                    </p>
+
+          <div className="flex items-center">
+              <CiMail size={20} />
+              <span className="ml-2">:mele.ceo13@gmail.com</span>
+            </div>
+
         </div>
 
         {/* ABOUT US */}
@@ -76,16 +86,32 @@ const Footer = () => {
           <p className="mb-4">
             Connect with us on our official LinkedIn page and share your thoughts to improve our service.
           </p>
-          <div className="subscribe-sec flex flex-col sm:flex-row items-center">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="p-2 email"
-            />
-            <button className="btn-subs p-2 md:ml-1">
-              Subscribe
-            </button>
-          </div>
+         {/* socials */}
+         <div className="flex space-x-4 mt-9 xl:ml-auto lg:ml-16 md:ml-12 sm:ml-8 gap-5 justify-end">
+  <a href="#" className="hover:text-blue-400">
+    <div className="p-3 box-social inline-flex items-center justify-center">
+      <BiLogoInstagram size={26} className="text-white xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px]" />
+    </div>
+  </a>
+  <a href="#" className="hover:text-blue-400">
+    <div className="p-3 box-social inline-flex items-center justify-center">
+      <FaXTwitter size={25} className="text-white xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px]" />
+    </div>
+  </a>
+  <a href="#" className="hover:text-blue-400">
+    <div className="p-3 box-social inline-flex items-center justify-center">
+      <FaLinkedinIn size={25} className="text-white xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px]" />
+    </div>
+  </a>
+  <a href="#" className="hover:text-blue-400">
+    <div className="p-3 box-social inline-flex items-center justify-center">
+      <FaFacebookF size={25} className="text-white xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px]" />
+    </div>
+  </a>
+</div>
+
+
+
         </div>
       </div>
 
@@ -95,14 +121,17 @@ const Footer = () => {
       </div>
 
       {/* Scroll to Top Button */}
-      {showArrow && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-10 right-5 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-400 shadow-md transition-all duration-300 animate-bounce"
-        >
-          <i className="fas fa-arrow-up"></i>
-        </button>
-      )}
+    
+
+{showArrow && (
+  <button
+    onClick={scrollToTop}
+    className="fixed bottom-10 right-5 bg-blue-700 text-white p-4 rounded-full hover:bg-blue-500 shadow-md transition-all duration-300 animate-bounce"
+  >
+    <FaArrowUp size={24} /> 
+  </button>
+)}
+
     </footer>
   );
 };
