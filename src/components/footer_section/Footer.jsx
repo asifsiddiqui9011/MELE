@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './footer.css';
-import phone from './phone.png';
-import email from './email.svg';
 import { BsTelephone } from 'react-icons/bs';
 import { CiMail } from 'react-icons/ci';
 import { BiLogoInstagram } from 'react-icons/bi';
