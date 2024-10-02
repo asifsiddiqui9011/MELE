@@ -2,17 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './footer.css';
 import phone from './phone.png';
 import email from './email.svg';
-import { BiLogoInstagram } from "react-icons/bi";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaArrowUp } from 'react-icons/fa6';
-import { BsTelephone } from "react-icons/bs";
-import { CiMail } from "react-icons/ci";
-
-
-
-
 
 const Footer = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -60,11 +49,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg text-white font-semibold mb-4 w-full">ABOUT US</h4>
           <ul>
-            <li><a href="/" className="hover:text-blue-400">Home</a></li>
-            <li><a href="/about" className="hover:text-blue-400">About Us</a></li>
-            <li><a href="/services" className="hover:text-blue-400">Our Services</a></li>
-            <li><a href="/terms" className="hover:text-blue-400">Terms & Condition</a></li>
-            <li><a href="/privacy" className="hover:text-blue-400">Privacy Policy</a></li>
+            <li><ScrollLink to="/"  smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Home</ScrollLink></li>
+            <li><ScrollLink to="about"  smooth={true} duration={500} offset={-100} className="hover:text-blue-400">About Us</ScrollLink></li>
+            <li><ScrollLink to="services" smooth={true} duration={500} offset={-100}  className="hover:text-blue-400">Our Services</ScrollLink></li>
+            <li><ScrollLink to="/terms"  smooth={true} duration={500} offset={-100}  className="hover:text-blue-400">Terms & Condition</ScrollLink></li>
+            <li><ScrollLink to="/privacy" smooth={true} duration={500} offset={-100}  className="hover:text-blue-400">Privacy Policy</ScrollLink></li>
           </ul>
         </div>
 
@@ -72,11 +61,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg text-white font-semibold mb-4 w-full">USEFUL LINKS</h4>
           <ul>
-            <li><a href="/portfolio" className="hover:text-blue-400">Portfolio</a></li>
-            <li><a href="/team" className="hover:text-blue-400">Team</a></li>
-            <li><a href="/career" className="hover:text-blue-400">Career</a></li>
-            <li><a href="/contact" className="hover:text-blue-400">Contact</a></li>
-            <li><a href="/faq" className="hover:text-blue-400">FAQ</a></li>
+            <li><ScrollLink to="portfolio" smooth={true} duration={300} offset={-100} className="hover:text-blue-400">Portfolio</ScrollLink></li>
+            <li><ScrollLink to="/team"  smooth={true} duration={300} offset={10} className="hover:text-blue-400">Team</ScrollLink></li>
+            <li><ScrollLink to="/career" smooth={true} duration={300} offset={10} className="hover:text-blue-400">Career</ScrollLink></li>
+            <li><ScrollLink to="contact" smooth={true} duration={300} offset={-60} className="hover:text-blue-400">Contact</ScrollLink></li>
+            <li><ScrollLink to="faq" smooth={true} duration={300} offset={-100}  className="hover:text-blue-400">FAQ</ScrollLink></li>
           </ul>
         </div>
 
