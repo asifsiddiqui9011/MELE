@@ -3,7 +3,7 @@ import './footer.css';
 import { BsTelephone } from 'react-icons/bs';
 import { CiMail } from 'react-icons/ci';
 import { BiLogoInstagram } from 'react-icons/bi';
-import { FaXTwitter, FaLinkedinIn, FaFacebookF, FaArrowUp } from 'react-icons/fa';
+import { FaXTwitter, FaLinkedinIn, FaFacebookF, FaArrowUp } from 'react-icons/fa6';
 import { Link as ScrollLink } from 'react-scroll'; // Importing ScrollLink
 
 const Footer = () => {
