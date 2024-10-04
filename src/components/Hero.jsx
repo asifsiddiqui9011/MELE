@@ -2,7 +2,6 @@
 import { FaAngleRight } from "react-icons/fa6";
 import ImageCollage from "./ImageCollage";
 import LogoTicker from "./LogoTicker";
-import Carousel from "./Carousel";
 
 const Hero = () => {
   return (

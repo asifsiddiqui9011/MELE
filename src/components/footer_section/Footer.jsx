@@ -78,17 +78,6 @@ const Footer = () => {
             Connect with us on our official LinkedIn page and share your thoughts to improve our service.
           </p>
 
-          <div className="subscribe-sec flex flex-col sm:flex-row items-center">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="p-2 email"
-            />
-            <button className="btn-subs p-2 md:ml-1">
-              Subscribe
-            </button>
-          </div>
-
           {/* socials */}
           <div className="flex space-x-4 mt-9 xl:ml-auto lg:ml-16 md:ml-12 sm:ml-8 gap-5 justify-end">
             <a href="#" className="hover:text-blue-400">
@@ -112,7 +101,6 @@ const Footer = () => {
               </div>
             </a>
           </div>
->>>>>>> 9d4f1ed5c61f3b7e9183c1b97333d0f74df5f818
         </div>
       </div>
 
