@@ -35,7 +35,7 @@ export const MenuLinks = [
   },
   {
     id: 6,
-    name: "contact",
+    name: "Contact",
     link: "contact",
   },
   {
