@@ -2,6 +2,8 @@ import React from "react";
 import Carousel from "./Carousel";
 import StatsSection from "./StatsSection";
 import Carousel2 from "./Carousel2";
+import Card from "./Card/Card";
+import { cards } from "../Data/Data";
 
 const Services = () => {
   return (
@@ -21,6 +23,14 @@ const Services = () => {
       <div className="flex items-center justify-center pb-10">
         <Carousel2 />
       </div>
+      <div className="flex items-center gap-5 justify-center flex-wrap px-20">
+        {cards.map((service,index)=>{
+            return(
+              <Card key={index} img={service.image} title={service.title} desc={service.desc}/>
+            )
+        })}
+      </div>
+     
     </div>
   );
 };

@@ -1,0 +1,42 @@
+.card-caontainer{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    max-width:28vw ;
+    min-width: 300px;
+    min-height: 250px;
+    flex-wrap: wrap;
+    transition: 0.3s ease-in-out;
+}
+
+.card-caontainer:hover{
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.1),-2px -2px 50px rgba(0, 0, 0, 0.1);
+}
+
+.card-tag-img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card-tag-img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(white,grey);
+    padding: 8px;
+
+}
+
+.card-desc{
+   content:normal;
+   text-align: justify;
+}

@@ -60,7 +60,7 @@ const Contact = () => {
   }
 
   return (
-    <section className="bg-gradient-to-b from-white to-[#D2DCFF] pb-24 overflow-x-clip relative">
+    <section className="bg-gradient-to-b from-white to-[#D2DCFF] pb-24 overflow-x-clip relative" id="contact">
       <div className="container mx-auto">
         <div className="backdrop-blur-lg bg-white/50 flex-col items-center justify-center rounded-3xl p-8">
           <h1

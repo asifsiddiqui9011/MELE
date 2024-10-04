@@ -1,6 +1,8 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
 import { MenuLinks } from "./Navbar";
+import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const ResponsiveMenu = ({ showMenu, toggle }) => {
   return (
@@ -20,16 +22,37 @@ const ResponsiveMenu = ({ showMenu, toggle }) => {
       <div className="card flex flex-col items-center justify-center">
         <nav className="w-full">
           <ul className="space-y-6 text-xl">
-            {MenuLinks.map((data) => (
-              <li key={data.name}>
-                <a
-                  href={data.link}
+            {MenuLinks.map((data) => {
+              if(data.page){
+                   return(
+                    <li key={data.name}>
+                <Link
+                  to={data.page}
+                  offset={0}
                   className="block w-full px-4 py-2 rounded-md text-gray-700 dark:text-gray-200 transition-colors duration-200 cursor-pointer"
                 >
                   {data.name}
-                </a>
+                </Link>
               </li>
-            ))}
+                   )
+              }else{
+                return(
+                <li key={data.name}>
+                <ScrollLink
+                  to={data.link}
+                  smooth={true}
+                  duration={300}
+                  offset={-70}
+                  className="block w-full px-4 py-2 rounded-md text-gray-700 dark:text-gray-200 transition-colors duration-200 cursor-pointer"
+                > <Link to={'/'}>
+                  {data.name}
+                  </Link>
+                </ScrollLink>
+              </li>
+                )
+              }
+              
+            })}
           </ul>
         </nav>
         <button

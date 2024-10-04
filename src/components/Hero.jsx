@@ -2,6 +2,7 @@
 import { FaAngleRight } from "react-icons/fa6";
 import ImageCollage from "./ImageCollage";
 import LogoTicker from "./LogoTicker";
+import Carousel from "./Carousel";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div className="container ">
         <div className="md:flex gap-20 mt-40 w-full h-full">
           <div className="md:w-[500px]">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
+            <h1 className="text-5xl pb-5 md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text ">
               Pathway to your Dream Project
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">

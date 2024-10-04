@@ -78,7 +78,7 @@ const Footer = () => {
           <p className="mb-4">
             Connect with us on our official LinkedIn page and share your thoughts to improve our service.
           </p>
-          <div className="subscribe-sec flex flex-col sm:flex-row items-center">
+          {/* <div className="subscribe-sec flex flex-col sm:flex-row items-center">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -87,7 +87,7 @@ const Footer = () => {
             <button className="btn-subs p-2 md:ml-1">
               Subscribe
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

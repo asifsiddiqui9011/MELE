@@ -3,12 +3,14 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import Logo from "../assets/company_logo.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import {Link as ScrollLink} from "react-scroll"
+import {Link} from 'react-router-dom'
 
 export const MenuLinks = [
   {
     id: 1,
     name: "Home",
     link: "/",
+    page:'/'
   },
   {
     id: 2,
@@ -28,6 +30,7 @@ export const MenuLinks = [
   {
     id: 5,
     name: "Careers",
+    page:'/career'
     //link: "https://docs.google.com/forms/d/e/1FAIpQLSeerLzi0SWlZO74Mw3S6VH4gNQ2A2Q6PUs9kfUzn046Al0VCg/viewform",
   },
   {
@@ -89,19 +92,40 @@ const Navbar = () => {
           {/* Navigation in the center */}
           <nav className="hidden md:flex justify-center flex-1">
             <ul className="flex items-center gap-6">
-              {MenuLinks.map(({ id, name, link }) => (
-                <li key={id} className="py-2">
-                  <ScrollLink
-                    to={`${link}`}
-                    smooth={true}
-                    duration={300}
-                    offset={-70}
-                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
-                  >
-                    {name}
-                  </ScrollLink>
-                </li>
-              ))}
+              {MenuLinks.map(({ id, name, link, page }) => {
+
+                if(page){
+                  return(
+                    <li key={id} className="py-2">
+                      <Link
+                        to={page}
+                        className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
+                      >
+                        
+                        {name}
+                      </Link>
+                    </li>
+                    )
+                }else{
+                  return(
+                    <li key={id} className="py-2">
+                      
+                      <ScrollLink
+                        to={`${link}`}
+                        smooth={true}
+                        duration={300}
+                        offset={-70}
+                        className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 "
+                      ><Link to='/'>
+                        {name}
+                        </Link>
+                      </ScrollLink>
+                     
+                    </li>
+                    )
+                }
+               
+               })}
             </ul>
           </nav>
 
