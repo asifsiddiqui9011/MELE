@@ -61,3 +61,9 @@ footer {
 .email, .btn-subs {
     height: 3.2rem;
 }
+.box-social{
+    background-color: rgba(11, 42, 75, 0.801);
+    border: 0.5px solid rgba(59, 59, 155, 0.706);
+    border-radius: 2rem;
+    
+}
