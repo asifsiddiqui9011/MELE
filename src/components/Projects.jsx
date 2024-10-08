@@ -10,7 +10,7 @@ const Projects = () => {
 <div><HeaderSectionOfProject/></div>
 
 
-<div className="container  mx-auto py-12 px-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
+<div className="container  mx-auto py-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
       {cardData.map((card, index) => (
         <div
           key={index}

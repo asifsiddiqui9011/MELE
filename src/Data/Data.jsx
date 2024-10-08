@@ -1,16 +1,22 @@
-import webdevelopment from "../assets/code.png";
-import ml from "../assets/ml.png";
-import cloudService from "../assets/server.png";
-import UIUX from "../assets/UIUX.png";
-import APPdev from "../assets/app.png";
+ import webdevelopment from "../assets/code.png";
+// import ml from "../assets/ml.png";
+// import cloudService from "../assets/server.png";
+// import UIUX from "../assets/UIUX.png";
+// import APPdev from "../assets/app.png";
 import RAG from "../assets/project/RAG.png";
 import AWS from "../assets/project/awslogo.png";
+//import img from '../../assets/project/awslogo.png'
+import cloud from '../assets/cards/cloud.jpg'
+import app from '../assets/cards/app.jpg'
+import web from '../assets/cards/web.jpg'
+import ml from '../assets/cards/ml.jpg'
+import uiux from '../assets/cards/uxui.jpg'
 
 const cards = [
   {
     title: "Web App Development",
     desc: "Our custom web development services include both front-end and back-end development. Whether it is enhancing an existing app or architecting an enterprise app, our developers are up for the challenge.",
-    image: webdevelopment,
+    image: web,
   },
   {
     title: "Model Building (ML)",
@@ -20,17 +26,17 @@ const cards = [
   {
     title: "Cloud Services",
     desc: "We leverage AWS's robust cloud infrastructure to ensure scalable, secure, and efficient solutions tailored to meet your specific needs. Whether integrating models into your website or using various AWS services, we customize our approach based on your preferences.",
-    image: cloudService,
+    image: cloud,
   },
   {
     title: "UI/UX Design",
-    desc: "Our design services ensure your website is not only functional but also beautiful, providing an exceptional user experience.",
-    image: UIUX,
+    desc: "Our design services ensure your website is not only functional but also beautiful, providing an exceptional delightful user experiences that resonate, Balancing aesthetics and usability for seamless digital journeys. ",
+    image:uiux,
   },
   {
     title: "App Development",
     desc: "We offer end-to-end app development services for both mobile and web platforms. From design to deployment, our team builds user-friendly, high-performance apps using the latest technologies like React Native and Flutter. Whether you need a new app or an upgrade, we deliver solutions tailored to your business needs.",
-    image: APPdev,
+    image: app,
   },
 ];
 
