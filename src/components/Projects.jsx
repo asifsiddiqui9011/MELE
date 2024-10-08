@@ -1,6 +1,8 @@
 import React from "react";
 import { cardData } from "../Data/Data.jsx";
 import HeaderSectionOfProject from "./HeaderSectionOfProject.jsx";
+import { Link } from "react-router-dom";
+
 const Projects = () => {
 
   
@@ -12,7 +14,7 @@ const Projects = () => {
 
 <div className="container  mx-auto py-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
       {cardData.map((card, index) => (
-        <div
+      <Link to={`/project/${card.title}`} key={index}>  <div
           key={index}
           className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:duration-300"
         >
@@ -28,8 +30,10 @@ const Projects = () => {
           <h2 className="text-xl font-semibold mb-3">{card.title}</h2>
           <p className="text-gray-600">{card.description}</p>
         </div>
+        </Link>
       ))}
     </div>
+
 
     
 

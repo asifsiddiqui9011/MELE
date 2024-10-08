@@ -16,6 +16,8 @@ import { Routes,Route } from "react-router-dom";
 import CareerForm from "./components/CareerForm/CareerForm";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import ServiceDesc from "./components/ServiceDesc/ServiceDesc";
+import ProjectDesc from "./components/ProjectDesc/ProjectDesc";
 
 const ScrollToTop = (props) => {
   const location = useLocation();
@@ -41,6 +43,12 @@ const App = () => {
         path="/career"
         element={<CareerForm/>}
         />
+        <Route path={"/service"} element={<ServiceDesc/> }>
+            <Route path=':serviceId' element={<ServiceDesc/>}/>
+        </Route>
+        <Route path={"/project"} element={<ProjectDesc/>}>
+             <Route path=':projectId' element={<ProjectDesc/>}/>
+        </Route>
        
       </Routes>
       </ScrollToTop>

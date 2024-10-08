@@ -6,6 +6,7 @@ import Card from "./Card/Card";
 import { cards } from "../Data/Data";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { Link } from "react-router-dom";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -63,7 +64,7 @@ const Services = () => {
       <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
         {cards.map((service,index)=>{
             return(
-              <Card key={index} img={service.image} title={service.title} desc={service.desc}/>
+          <Link to={`/service/${service.title}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}/></Link>
             )
         })}
         </Carousel>
