@@ -10,7 +10,7 @@
     /* max-width:25vw ;
     min-width: 300px;
     min-height: 350px; */
-    margin: 15px;
+    margin: 20px;
     flex-wrap: wrap;
     transition: 0.3s ease-in-out;
     
@@ -23,6 +23,14 @@
     margin:5px;
     width:fit-content;
     font-size: large;
+    content:normal;
+   text-align: justify;
+   display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    /* margin: 0px 10px 10px 10px; */
 }
 
 .card-img{
@@ -41,4 +49,10 @@
 .card-desc{
    content:normal;
    text-align: justify;
+   display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin: 0px 10px 10px 10px;
 }
