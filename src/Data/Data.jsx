@@ -5,21 +5,28 @@
 // import APPdev from "../assets/app.png";
 import RAG from "../assets/project/RAG.png";
 import AWS from "../assets/project/awslogo.png";
-//import img from '../../assets/project/awslogo.png'
+
+//our servivce images
 import cloud from '../assets/cards/cloud.jpg'
 import app from '../assets/cards/app.jpg'
 import web from '../assets/cards/web.jpg'
 import ml from '../assets/cards/ml.jpg'
 import uiux from '../assets/cards/uxui.jpg'
+
+//projects images
 import pdf from '../assets/project/pdf.jpg'
 import eCommerce from '../assets/project/eCommerce.jpg'
 import library from '../assets/project/libraryManagement.jpg'
-import course from '../assets/project/libraryManagement.jpg'
-import hindiLetter from '../assets/project/pdf.jpg'
-import emotionDetection from '../assets/project/faceRecognition.jpg'
+import course from '../assets/project/courseRecommendation.jpg'
+import hindiLetter from '../assets/project/hindiletter.jpg'
+import emotionDetection from '../assets/project/emotionDetection.jpg'
 import image from '../assets/project/imageClassification.jpg'
 import disease from '../assets/project/diseasePrediction.jpg'
 import loan from '../assets/project/loanPrediction.jpg'
+import tempoHouse from '../assets/project/tempohouse.jpg'
+import grammar from '../assets/project/grmmaticalError.jpg'
+import garbage from '../assets/project/garbagmanagement.jpg'
+import faceRecognition from '../assets/project/faceRecognition.jpg'
 
 
 const cards = [
@@ -50,10 +57,10 @@ const cards = [
   },
 ];
 
-const cardData = [
+const projectsData = [
   {
     icon: webdevelopment,
-    image:pdf,
+    image:garbage,
     title: "Smart Garbage Management System",
     description:
       "We've crafted a Smart Garbage Management System for our client, featuring a React.js front-end and a Node.js and Express backend. Our unique solution integrates hardware and sensors to gather real-time data from garbage collectors, enhancing waste disposal efficiency and promoting environmental sustainability.",
@@ -62,21 +69,18 @@ const cardData = [
     icon: RAG,
     image:pdf,
     title: "RAG On Complex PDF Using LlamaParse, Langchain And Groq",
-    description:
-      "This project develops a Retrieval-Augmented Generation (RAG) system for complex PDFs using LlamaParse, LangChain, and Groq. LlamaParse parses intricate documents, LangChain manages language model interactions, and Groq ensures efficient processing. Together, they create a system that accurately extracts and responds to queries from detailed PDF content, enhancing data retrieval and knowledge extraction.",
+    description:"This project develops a Retrieval-Augmented Generation (RAG) system for complex PDFs using LlamaParse, LangChain, and Groq. LlamaParse parses intricate documents, LangChain manages language model interactions, and Groq ensures efficient processing. Together, they create a system that accurately extracts and responds to queries from detailed PDF content, enhancing data retrieval and knowledge extraction.",
   },
   {
     icon: AWS,
     image:eCommerce,
-    title:
-      "Develop A Scalable E-Commerce Website Using Elastic Beanstalk For Deployment",
-    description:
-      "By leveraging AWS Elastic Beanstalk, we focused on developing an e-commerce application while AWS handles the infrastructure management. Elastic Beanstalk automatically scales the application, manages load balancing, and monitors health, making it an ideal platform for deploying scalable web applications. Integrating other AWS services like RDS, S3, CloudFront, and ElastiCache enhances the performance and reliability of the e-commerce website.",
+    title:"Develop A Scalable E-Commerce Website Using Elastic Beanstalk For Deployment",
+    description:"By leveraging AWS Elastic Beanstalk, we focused on developing an e-commerce application while AWS handles the infrastructure management. Elastic Beanstalk automatically scales the application, manages load balancing, and monitors health, making it an ideal platform for deploying scalable web applications. Integrating other AWS services like RDS, S3, CloudFront, and ElastiCache enhances the performance and reliability of the e-commerce website.",
   },
   {
     image:disease,
     title:"Disease Prediction System",
-    description:"A Disease Prediction System uses machine learning and data analysis to forecast the likelihood of diseases based on patient data such as medical history, lifestyle, and genetic factors. It enables early detection, helping healthcare providers to offer personalized treatments and take preventive measures, ultimately improving patient outcomes and reducing healthcare costs."
+    description:"It is a Glaucoma Disease Prediction System uses machine learning and medical imaging analysis to predict the likelihood of glaucoma, a condition that causes damage to the optic nerve and can lead to vision loss. By analyzing patient data such as retinal images, intraocular pressure, and other risk factors, the system helps in early detection and prevention. This assists healthcare professionals in diagnosing glaucoma at an early stage, allowing for timely intervention and treatment to prevent further vision impairment."
   },
   {
     image:library,
@@ -99,7 +103,7 @@ const cardData = [
     description:"An Image Classification System uses machine learning algorithms to categorize images into predefined classes or labels. By analyzing patterns, features, and visual data in images, the system can accurately identify objects, scenes, or activities. Image classification is widely used in fields such as healthcare (for medical image analysis), security (for facial recognition), and retail (for product categorization), making it an essential tool in automating and enhancing visual data processing."
   },
   {
-    image:pdf,
+    image:grammar,
     title:"Gramatical Error Prediction System",
     description:"A Grammatical Error Prediction System uses natural language processing (NLP) and machine learning algorithms to identify and predict potential grammar, punctuation, and syntax errors in written text. It helps users by providing real-time feedback and suggesting corrections, improving the overall quality and clarity of the writing. This system is commonly used in educational tools, writing assistants, and content creation platforms to enhance communication and language proficiency."
   },
@@ -112,7 +116,17 @@ const cardData = [
     image:course,
     title:"Course Recommendation System",
     description:"A Course Recommendation System utilizes data analysis and machine learning algorithms to suggest personalized courses to users based on their interests, academic history, learning goals, and preferences. It can analyze patterns such as previously completed courses, ratings, or peer feedback to deliver relevant suggestions, improving the learning experience. These systems are commonly used in e-learning platforms, helping students discover courses that best match their needs and skills, thereby enhancing engagement and knowledge growth."
+  },
+  {
+    image:tempoHouse,
+    title:"Tempo House E-commerce website",
+    description:"It is an Automobile E-commerce Website enables users to browse, compare, and purchase vehicles online. It offers a seamless platform for customers to explore a wide range of new and used cars, view detailed specifications, compare models, and read customer reviews. With features like advanced search filters, virtual showrooms, financing options, and online booking, the website simplifies the car buying process. Additionally, integration of AI-driven tools for personalized recommendations and virtual assistance enhances user experience, making it a one-stop solution for automobile shopping."
+  },
+  {
+    image:faceRecognition,
+    title:"Face Recognition Attendence System",
+    description:"A Face Recognition Attendance System uses facial recognition technology to automatically record attendance by identifying individuals based on their facial features. It captures real-time images of individuals and matches them against a pre-stored database of registered faces to mark attendance. This system is widely used in workplaces, schools, and events, offering a more efficient, contactless, and accurate alternative to traditional methods like manual roll calls or biometric scans, improving security and streamlining attendance management."
   }
-];
+]
 
-export { cards, cardData };
+export { cards, projectsData };

@@ -1,5 +1,5 @@
 import React from "react";
-import { cardData } from "../Data/Data.jsx";
+import { projectsData } from "../Data/Data.jsx";
 import HeaderSectionOfProject from "./HeaderSectionOfProject.jsx";
 import { Link } from "react-router-dom";
 import Carousel from 'react-multi-carousel';
@@ -60,7 +60,7 @@ const Projects = () => {
             </div> */}
            <div className="pb-10">
                <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
-                    {cardData.map((project,index)=>{
+                    {projectsData.map((project,index)=>{
                         return(
                       <Link to={`/service/${project.title}`} key={index}>  <Card  img={project.image} title={project.title} desc={project.description}/></Link>
                         )
