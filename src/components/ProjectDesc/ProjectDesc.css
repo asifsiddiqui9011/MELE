@@ -22,9 +22,9 @@
 }
 
 /* Hover effect: stop scrolling when hovered */
-.tech-stack-container:hover .tech-stack-slider {
+/* .tech-stack-container:hover .tech-stack-slider {
   animation-play-state: paused;
-}
+} */
 
 .tech-icon:hover {
   transform: scale(1.1);
