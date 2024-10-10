@@ -4,8 +4,9 @@ import { projectsData } from '../../Data/Data.jsx';
 import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './ProjectDesc.css';  // Import the CSS for infinite animation
 
-// Helper function to render stars with animation
+// Helper function to render stars with horizontal layout and hover effect
 const renderStars = (rating) => {
   return (
     <div className="flex">
@@ -36,7 +37,7 @@ const ProjectDesc = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-10 px-4 lg:px-24">
       {/* Project Header */}
-      <div className="animate__animated animate__fadeInDown mt-20" data-aos="fade-down">
+      <div className="animate__animated animate__fadeInDown mt-20" data-aos="fade-up">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-6 text-gray-800">
           {project.title}
         </h1>
@@ -74,6 +75,23 @@ const ProjectDesc = () => {
         )}
       </div>
 
+
+{/* Tech Stack Section */}
+<div className="mt-12 p-6 bg-white  rounded-lg shadow-md" data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-6 text-gray-700 text-center">Tech Stack Used</h2>
+        <div className="tech-stack-container">
+          <div className="tech-stack-slider">
+            {project.techStack && project.techStack.map((tech, i) => (
+              <div key={i} className="tech-icon">
+                <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+                <p className="text-gray-700 mt-2">{tech.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+
       {/* User Reviews Section */}
       <div className="mt-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
         <h2 className="text-2xl font-semibold mb-6 text-gray-700">User Reviews</h2>
@@ -83,7 +101,6 @@ const ProjectDesc = () => {
             <div key={index} className="mb-6">
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-bold text-gray-800">{review.user}</h3>
-                {/* Animated Star Rating */}
                 <div className="group">
                   {renderStars(review.rating)}
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-gray-500">
@@ -98,6 +115,8 @@ const ProjectDesc = () => {
           <p className="text-gray-600">No reviews available for this project yet.</p>
         )}
       </div>
+
+      
 
       {/* Back to Projects Button */}
       <div className="mt-12 text-center" data-aos="fade">

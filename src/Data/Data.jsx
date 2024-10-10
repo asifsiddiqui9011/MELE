@@ -28,6 +28,20 @@ import grammar from '../assets/project/grmmaticalError.jpg'
 import garbage from '../assets/project/garbagmanagement.jpg'
 import faceRecognition from '../assets/project/faceRecognition.jpg'
 
+// Tech Stack Logo
+import socketio from '../assets/project/socketio.png'
+import reactjs from '../assets/project/reactjs.png'
+import nodejs from '../assets/project/nodejs.png'
+import mongo from '../assets/project/mongo.jpg'
+import express from '../assets/project/expree.png'
+import tailwindcss from '../assets/project/tailwindcss.png'
+import firebase from '../assets/project/firebase.png'
+import redux from '../assets/project/redux.png'
+import graphql from '../assets/project/graphql.png'
+import python from '../assets/project/python.png'
+
+
+
 
 const cards = [
   {
@@ -81,6 +95,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     icon: RAG,
@@ -104,6 +130,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     icon: AWS,
@@ -150,6 +188,7 @@ const projectsData = [
       },
     ],
   },
+  
   {
     image:library,
     title:"Library Management system",
@@ -171,6 +210,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:loan,
@@ -193,6 +244,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:emotionDetection,
@@ -215,6 +278,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:image,
@@ -237,6 +312,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:grammar,
@@ -259,6 +346,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:hindiLetter,
@@ -281,6 +380,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:course,
@@ -303,6 +414,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:tempoHouse,
@@ -325,6 +448,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   {
     image:faceRecognition,
@@ -347,6 +482,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   }
 ]
 

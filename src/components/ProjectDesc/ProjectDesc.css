@@ -1,0 +1,60 @@
+/* Infinite scroll for tech stack */
+.tech-stack-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-stack-slider {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.tech-icon {
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.tech-icon img {
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect: stop scrolling when hovered */
+.tech-stack-container:hover .tech-stack-slider {
+  animation-play-state: paused;
+}
+
+.tech-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Keyframes for infinite scroll: moving from right to left */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tech-stack-slider {
+    gap: 1rem;
+  }
+
+  .tech-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-icon img {
+    width: 32px;
+    height: 32px;
+  }
+}
