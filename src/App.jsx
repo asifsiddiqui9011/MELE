@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar";
 // import BookNow from "./components/BookNow";
 import Home from "./Pages/Home/Home";
 import { Routes,Route } from "react-router-dom";
-import CareerForm from "./components/CareerForm/CareerForm";
+import Career from "./Pages/Career/Career";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -39,7 +39,7 @@ const App = () => {
         />
         <Route
         path="/career"
-        element={<CareerForm/>}
+        element={<Career/>}
         />
        
       </Routes>
