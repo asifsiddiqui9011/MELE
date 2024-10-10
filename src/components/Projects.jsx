@@ -62,7 +62,7 @@ const Projects = () => {
                <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
                     {projectsData.map((project,index)=>{
                         return(
-                      <Link to={`/service/${project.title}`} key={index}>  <Card  img={project.image} title={project.title} desc={project.description}/></Link>
+                      <Link to={`/project/${index}`} key={index}>  <Card  img={project.image} title={project.title} desc={project.description}/></Link>
                         )
                     })}
                 </Carousel>

@@ -47,7 +47,7 @@ const App = () => {
             <Route path=':serviceId' element={<ServiceDesc/>}/>
         </Route>
         <Route path={"/project"} element={<ProjectDesc/>}>
-             <Route path=':projectId' element={<ProjectDesc/>}/>
+             <Route path=':index' element={<ProjectDesc/>}/>
         </Route>
        
       </Routes>
