@@ -64,7 +64,7 @@ const Services = () => {
       <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
         {cards.map((service,index)=>{
             return(
-          <Link to={`/service/${service.title}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}/></Link>
+          <Link to={`/service/${service.title}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
             )
         })}
         </Carousel>
