@@ -1,34 +1,37 @@
-import React from 'react';
-import AboutUs from '../assets/aboutus.jpeg'
+import React from "react";
+import AboutUs from "../assets/aboutus.jpeg";
 
 const AboutUsContent = () => {
   return (
-    <div className="container  mx-auto py-10 px-4 flex flex-col lg:flex-row items-center justify-center space-y-6 lg:space-y-0 lg:space-x-10">
+    <div className="container mx-auto py-10 px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
       {/* Text Section */}
-      <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 animate-fadeIn">
+      <div
+        data-aos="fade-right"
+        className="lg:pr-10 text-center lg:text-left"
+      >
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-blue-900 leading-tight">
           We make creativity work for your project!
         </h2>
-        <p className="text-gray-700 mt-4 animate-fadeIn">
-          Ours is a team of creatives that is brainstorming on great ideas,{' '}
-          <span className="font-bold">All. The. Time</span>. With our skills put
-          together, you get an ensemble capable of doing anything and everything
-          your project needs.
+        <p className="text-gray-700 mt-6 leading-relaxed text-lg lg:text-xl">
+          Our team of creatives brainstorms ideas <span className="font-bold">All. The. Time.</span> 
+          With our combined skills, we create an ensemble capable of tackling any challenges your project requires.
         </p>
-        {/* Call to Action Button */}
-        <div className="mt-6">
-          <button className="px-6 py-3 bg-blue-500 text-white rounded-full hover:scale-105 transform transition duration-300 ease-in-out shadow-lg animate-bounceSmall">
+        <div className="mt-8">
+          <button className="px-8 py-4 bg-blue-500 text-white rounded-full hover:bg-blue-700 transition duration-300">
             Read More
           </button>
         </div>
       </div>
 
       {/* Image Section */}
-      <div className="lg:w-1/2">
+      <div
+        data-aos="fade-left"
+        className="lg:w-full flex justify-center lg:justify-end"
+      >
         <img
           src={AboutUs}
           alt="Creative Project"
-          className="w-full rounded-lg shadow-xl transform transition duration-500 hover:scale-105 animate-float"
+          className="w-full lg:max-w-lg rounded-lg shadow-xl transition-transform transform hover:scale-105"
         />
       </div>
     </div>
