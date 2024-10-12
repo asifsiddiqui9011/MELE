@@ -7,10 +7,18 @@
 .tech-stack-slider {
   display: flex;
   gap: 2rem;
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
   will-change: transform;
 }
 
+/* Duplicate the slider content to ensure continuous scrolling */
+.tech-stack-slider:after {
+  content: "";
+  display: flex;
+  gap: 3rem;
+}
+
+/* Tech icon styling */
 .tech-icon {
   flex: 0 0 auto;
   text-align: center;
@@ -33,10 +41,10 @@
 /* Keyframes for infinite scroll: moving from right to left */
 @keyframes scroll {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);  /* Start from normal position */
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%); /* Move by 50% of total width for a seamless loop */
   }
 }
 
@@ -57,4 +65,5 @@
     width: 32px;
     height: 32px;
   }
+  
 }

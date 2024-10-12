@@ -80,15 +80,23 @@ const ProjectDesc = () => {
 <div className="mt-12 p-6 bg-white  rounded-lg shadow-md" data-aos="fade-up">
         <h2 className="text-2xl font-semibold mb-6 text-gray-700 text-center">Tech Stack Used</h2>
         <div className="tech-stack-container">
-          <div className="tech-stack-slider">
-            {project.techStack && project.techStack.map((tech, i) => (
-              <div key={i} className="tech-icon">
-                <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
-                <p className="text-gray-700 mt-2">{tech.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+  <div className="tech-stack-slider">
+    {/* First set of tech stack icons */}
+    {project.techStack.map((tech, i) => (
+      <div key={i} className="tech-icon">
+        <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+        <p className="text-gray-700 mt-2">{tech.name}</p>
+      </div>
+    ))}
+    {/* Duplicate the tech stack to enable seamless scrolling */}
+    {project.techStack.map((tech, i) => (
+      <div key={`dup-${i}`} className="tech-icon">
+        <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
+        <p className="text-gray-700 mt-2">{tech.name}</p>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
 
 
