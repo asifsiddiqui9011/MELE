@@ -4,21 +4,18 @@ import HeaderSectionOfProject from "./HeaderSectionOfProject.jsx";
 import { Link } from "react-router-dom";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Card from "./Card/Card.jsx";
-
+import './Projects.css'; // Import custom CSS for animations
 
 const Projects = () => {
 
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
-  
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -26,52 +23,61 @@ const Projects = () => {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
+      items: 1,
     }
   };
 
-  
+  return (
+    <div className="w-full bg-gradient-to-r from-gray-100 to-gray-200" id="portfolio">
+      <HeaderSectionOfProject />
 
-  return <div className="w-full bg-white " id="portfolio"> 
-
-        <div><HeaderSectionOfProject/></div>
-
-
-        {/* <div className="container  mx-auto py-10 px-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
-              {cardData.map((card, index) => (
-              <Link to={`/project/${card.title}`} key={index}>  <div
-                  key={index}
-                  className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl hover:duration-300"
-                >
-                  <div
-                    className="bg-gray-100 p-4 rounded-full mb-4 animate-pulse icon-animation"
-                  >
+      <div className="pb-10">
+        <Carousel
+          responsive={responsive}
+          arrows={true} // Always show arrows
+          keyBoardControl={true}
+          showDots={true}
+          customDot={<CustomDot />} // Custom dot component
+          containerClass="carousel-container" // Custom container class
+        >
+          {projectsData.map((project, index) => {
+            return (
+              <Link to={`/project/${index}`} key={index}>
+                <div className="card-container bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out relative h-96 flex flex-col justify-between">
+                  <div className="card-image-container mb-4 rounded-lg overflow-hidden">
                     <img
-                      src={card.icon}
-                      alt={card.title}
-                      className="w-12 h-12 animate-spin-slow" // Applying custom animation to icon
+                      src={project.image}
+                      alt={project.title}
+                      className="card-image w-full h-48 object-cover"
                     />
                   </div>
-                  <h2 className="text-xl font-semibold mb-3">{card.title}</h2>
-                  <p className="text-gray-600">{card.description}</p>
+                  <h2 className="card-title text-gray-800 text-xl font-semibold mb-2">{project.title}</h2>
+                  <p className="card-desc text-gray-600 text-sm mb-4 flex-grow">
+                    {project.description}
+                  </p>
+                  <button className="animated-border-button relative z-10">
+                    <span className="relative z-20">Read More</span>
+                    <div className="border-animation"></div>
+                  </button>
                 </div>
-                </Link>
-              ))}
-            </div> */}
-           <div className="pb-10">
-               <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
-                    {projectsData.map((project,index)=>{
-                        return(
-                      <Link to={`/project/${index}`} key={index}>  <Card  img={project.image} title={project.title} desc={project.description}/></Link>
-                        )
-                    })}
-                </Carousel>
-           </div>
-     
-          </div>
+              </Link>
+            );
+          })}
+        </Carousel>
+      </div>
+    </div>
+  );
+};
 
-
-
-        };
+// Custom Dot Component for better styling
+const CustomDot = ({ onClick, ...rest }) => {
+  const { active } = rest;
+  return (
+    <li
+      className={`inline-block w-3 h-3 rounded-full mx-2 cursor-pointer ${active ? "bg-purple-600" : "bg-gray-400"}`}
+      onClick={() => onClick()}
+    />
+  );
+};
 
 export default Projects;

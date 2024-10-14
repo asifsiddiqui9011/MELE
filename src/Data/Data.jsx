@@ -199,6 +199,18 @@ const projectsData = [
         review: "Great project, but it could use a few more optimization features.",
       },
     ],
+    techStack: [
+      { name: 'React', icon: reactjs },
+      { name: 'Node.js', icon: nodejs },
+      { name: 'MongoDB', icon: mongo },
+      { name: 'Express', icon:express },
+      { name: 'Tailwind CSS', icon: tailwindcss },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux },
+      { name: 'Socket.IO', icon: socketio },
+      { name: 'Python', icon: python },
+      { name: 'GraphQL', icon: graphql }
+    ]
   },
   
   {
