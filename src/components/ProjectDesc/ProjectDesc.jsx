@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ProjectDesc.css';  // Import the CSS for infinite animation
 
+
 // Helper function to render stars with horizontal layout and hover effect
 const renderStars = (rating) => {
   return (
@@ -35,6 +36,7 @@ const ProjectDesc = () => {
   }, []);
 
   return (
+    <>
     <div className="min-h-screen bg-gray-50 py-10 px-4 lg:px-24">
       {/* Project Header */}
       <div className="animate__animated animate__fadeInDown mt-20" data-aos="fade-up">
@@ -136,6 +138,7 @@ const ProjectDesc = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 

@@ -59,7 +59,7 @@ const Services = () => {
         <Carousel2 />
       </div> */}
 
-      <div className="pb-10">
+      <div className="pb-5">
       {/* <Slider {...settings}> */}
       <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
         {cards.map((service,index)=>{
