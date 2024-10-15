@@ -2,6 +2,9 @@ import { serviceData } from "../Data/Data"
 import Carousel from 'react-multi-carousel';
 import { Link } from "react-router-dom";
 import Card from "./Card/Card";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const ServiceCarousel = () => {
     const responsive = {
@@ -24,12 +27,19 @@ const ServiceCarousel = () => {
           items: 1
         }
       };
+
+      useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration in ms
+          offset: 100, // Offset before the animation starts
+        });
+      }, []);
   return (
-    <div className="pb-5">
-    <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
+    <div className="pb-5" data-aos="fade-up">
+    <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]} >
       {serviceData.map((service,index)=>{
           return(
-        <Link to={`/service/${service.id}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
+        <Link to={`/service/${service.id}`} key={index} >  <Card   img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
           )
       })}
       </Carousel>

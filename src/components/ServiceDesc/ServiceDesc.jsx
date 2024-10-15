@@ -139,9 +139,9 @@ const ServiceDesc = () => {
 
       
       {/*Other Services */}
-      <div className='bg-white text-center p-5'>
-        <h1 className='section-title pt-2 text-sky-950'>Explore Other Services</h1>
-          <ServiceCarousel/>
+      <div className='bg-white text-center p-5'   >
+        <h1 className='section-title pt-2 text-sky-950' data-aos="fade-left" >Explore Other Services</h1>
+          <ServiceCarousel />
       </div>
     </div>
   );
