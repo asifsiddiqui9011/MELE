@@ -39,35 +39,201 @@ import firebase from '../assets/project/firebase.png'
 import redux from '../assets/project/redux.png'
 import graphql from '../assets/project/graphql.png'
 import python from '../assets/project/python.png'
+import tensorflow from '../assets/project/tensorflow.png'
+import figma from '../assets/project/figma.png'
+import pytorch from '../assets/project/pytorch.png'
+import scikitlearn from '../assets/project/scikitlearn.png'
+import pandas from '../assets/project/pandas.png'
+import numpy from '../assets/project/numpy.png'
+import docker from '../assets/project/docker.png'
+import kubernetes from '../assets/project/kubernets.png'
+import terraform from '../assets/project/teraform.png'
+import ec2 from '../assets/project/ec2.png'
+import s3 from '../assets/project/s3.png'
+import adobexd from '../assets/project/adobexd.png'
+import sketch from '../assets/project/sketch.png'
+import invision from '../assets/project/invision.png'
+import flutter from '../assets/project/flutter.png'
+import swift from '../assets/project/swift.png'
+import kotlin from '../assets/project/kotlin.png'
+import aws from '../assets/project/aws.png'
 
 
 
 
-const cards = [
+
+const serviceData = [
   {
+    id:0,
     title: "Web App Development",
     desc: "Our custom web development services include both front-end and back-end development. Whether it is enhancing an existing app or architecting an enterprise app, our developers are up for the challenge.",
     image: web,
+    chooseUs:"At MELE, we combine cutting-edge expertise with a client-centric approach to deliver high-quality, tailored web solutions that drive real business results. Our team is committed to understanding your unique needs and goals, ensuring that the solutions we provide are perfectly aligned with your vision.",
+    keyFeatures:[
+                {0:"intuative user interface"},
+                {1:"seamless integration of frontend backend and databases"},
+                {2:" complete deployed web application able to handle enormous users "} 
+                ],
+    techStack: [
+                { name: 'React', icon: reactjs },
+                { name: 'Node.js', icon: nodejs },
+                { name: 'MongoDB', icon: mongo },
+                { name: 'Express', icon:express },
+                { name: 'Tailwind CSS', icon: tailwindcss },
+                { name: 'Firebase', icon: firebase },
+                { name: 'Redux', icon: redux },
+                { name: 'Socket.IO', icon: socketio },
+                { name: 'Python', icon: python },
+                { name: 'GraphQL', icon: graphql }
+               ],
+    expertise:[
+                {
+                    title:'front End Development',
+                    content:'Utilizing modern frameworks like React, Angular, or Vue.js to create responsive and engaging user interfaces.'
+                },
+                {
+                    title:'Backend End Development',
+                    content:'Leveraging Node.js, Express.js, and databases like MongoDB and SQL to build robust server-side applications.'
+                },
+                {
+                    title:'API Development',
+                    content:'Designing and implementing RESTful and GraphQL APIs for seamless integration with third-party services'
+                }
+            ]
   },
   {
+    id:1,
     title: "Model Building (ML)",
     desc: "Our services include comprehensive steps such as data collection, preprocessing, model building, and deployment. We can integrate models into your website or use various Python frameworks. The choice of libraries and tools will be tailored to meet your specific needs.",
     image: ml,
+    chooseUs: "At MELE, we bring cutting-edge machine learning expertise to create intelligent solutions that transform your data into actionable insights. Our team ensures the highest standards of accuracy, scalability, and performance in every model we develop.",
+    keyFeatures: [
+      {0: "data collection and preprocessing"},
+      {1: "model training, testing, and validation"},
+      {2: "seamless model deployment and monitoring"}
+    ],
+    expertise: [
+      {
+        title: 'Data Preprocessing',
+        content: 'Cleaning, transforming, and preparing data for optimal model performance.'
+      },
+      {
+        title: 'Model Development',
+        content: 'Building machine learning models using Python libraries like TensorFlow, PyTorch, and Scikit-learn.'
+      },
+      {
+        title: 'Model Deployment',
+        content: 'Deploying models into production environments for real-time or batch predictions.'
+      }
+    ],
+    techStack: [
+      { name: 'Python', icon: python },
+      { name: 'TensorFlow', icon: tensorflow },
+      { name: 'PyTorch', icon: pytorch },
+      { name: 'Scikit-learn', icon: scikitlearn },
+      { name: 'Pandas', icon: pandas },
+      { name: 'NumPy', icon: numpy }
+    ]
   },
   {
+    id:2,
     title: "Cloud Services",
     desc: "We leverage AWS's robust cloud infrastructure to ensure scalable, secure, and efficient solutions tailored to meet your specific needs. Whether integrating models into your website or using various AWS services, we customize our approach based on your preferences.",
     image: cloud,
+    chooseUs: "MELE leverages the power of AWS to provide scalable, secure cloud solutions tailored to your specific business requirements. Our cloud expertise ensures optimal performance, cost efficiency, and security for your applications.",
+    keyFeatures: [
+      {0: "scalable infrastructure with AWS EC2 and S3"},
+      {1: "cloud-native application development"},
+      {2: "seamless integration with on-premises systems"}
+    ],
+    expertise: [
+      {
+        title: 'Cloud Architecture',
+        content: 'Designing secure, scalable, and cost-effective cloud infrastructure using AWS.'
+      },
+      {
+        title: 'Cloud Migration',
+        content: 'Migrating on-premises applications and databases to the cloud.'
+      },
+      {
+        title: 'Cloud Security',
+        content: 'Implementing security best practices to protect cloud resources.'
+      }
+    ],
+    techStack: [
+      { name: 'AWS', icon: aws },
+        { name: 'Docker', icon: docker },
+        { name: 'Kubernetes', icon: kubernetes },
+        { name: 'Terraform', icon: terraform },
+        { name: 'EC2', icon: ec2 },
+        { name: 'S3', icon: s3 }
+    ]
   },
   {
+    id:3,
     title: "UI/UX Design",
     desc: "Our design services ensure your website is not only functional but also beautiful, providing an exceptional delightful user experiences that resonate, Balancing aesthetics and usability for seamless digital journeys. ",
     image:uiux,
+    chooseUs: "At MELE, we design with a focus on the user, ensuring intuitive and visually appealing experiences that drive engagement. Our team blends creativity with functionality to deliver seamless user journeys.",
+    keyFeatures: [
+      {0: "user-centric design"},
+      {1: "responsive interfaces across all devices"},
+      {2: "high-quality visual aesthetics and branding"}
+    ],
+    expertise: [
+      {
+        title: 'UI Design',
+        content: 'Creating visually appealing and intuitive interfaces.'
+      },
+      {
+        title: 'UX Design',
+        content: 'Designing user flows that ensure a smooth and engaging user experience.'
+      },
+      {
+        title: 'Prototyping',
+        content: 'Developing interactive prototypes for testing and validation before final development.'
+      }
+    ],
+    techStack: [
+      { name: 'Figma', icon: figma },
+      { name: 'Adobe XD', icon: adobexd },
+      { name: 'Sketch', icon: sketch },
+      { name: 'InVision', icon: invision }
+    ]
   },
   {
+    id:4,
     title: "App Development",
     desc: "We offer end-to-end app development services for both mobile and web platforms. From design to deployment, our team builds user-friendly, high-performance apps using the latest technologies like React Native and Flutter. Whether you need a new app or an upgrade, we deliver solutions tailored to your business needs.",
     image: app,
+    chooseUs: "MELE offers top-tier app development services, creating high-performance mobile and web applications that meet your business needs. From design to deployment, we ensure a smooth user experience and reliable performance.",
+    keyFeatures: [
+      {0: "cross-platform development with React Native and Flutter"},
+      {1: "intuitive and engaging user interfaces"},
+      {2: "seamless API integration and backend services"}
+    ],
+    expertise: [
+      {
+        title: 'Mobile App Development',
+        content: 'Developing native and cross-platform apps with technologies like React Native and Flutter.'
+      },
+      {
+        title: 'Cross-Platform App Development',
+        content: 'Creating apps that run smoothly across multiple platforms, ensuring a seamless user experience on both mobile and web.'
+      },
+      {
+        title: 'App Maintenance',
+        content: 'Offering ongoing support and updates to ensure the app remains up-to-date with the latest trends and technologies.'
+      }
+    ],
+    techStack: [
+      { name: 'React Native', icon: reactjs },
+      { name: 'Flutter', icon: flutter },
+      { name: 'Swift', icon: swift },
+      { name: 'Kotlin', icon: kotlin },
+      { name: 'Firebase', icon: firebase },
+      { name: 'Redux', icon: redux }
+    ]
   },
 ];
 
@@ -521,4 +687,4 @@ const projectsData = [
   }
 ]
 
-export { cards, projectsData };
+export { serviceData, projectsData };

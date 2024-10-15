@@ -9,11 +9,11 @@ import StatsSection from "../../components/StatsSection";
 import BookNow from "../../components/BookNow";
 import Hero from "../../components/Hero";
 import Pricing from "../../components/Pricing";
-import bgimg from '../../assets/bg.jpg'
+
 
 const Home = () => {
   return (
-    <div className="bg-cover bg-fixed bg-center bg-no-repeat" style={{backgroundImage: `url(${bgimg})`}}>
+    <div >
       <Hero />
       <About />
       <Services />

@@ -18,6 +18,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import ServiceDesc from "./components/ServiceDesc/ServiceDesc";
 import ProjectDesc from "./components/ProjectDesc/ProjectDesc";
+import bgimg from './assets/bg.jpg'
 
 const ScrollToTop = (props) => {
   const location = useLocation();
@@ -30,7 +31,7 @@ const ScrollToTop = (props) => {
 
 const App = () => {
   return (
-    <main >
+    <main className="bg-cover bg-fixed bg-center bg-no-repeat" style={{backgroundImage: `url(${bgimg})`}} >
       <Navbar />
       <ScrollToTop>
       <Routes>

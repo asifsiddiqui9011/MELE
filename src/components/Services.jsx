@@ -3,7 +3,7 @@ import React from "react";
 import StatsSection from "./StatsSection";
 import Carousel2 from "./Carousel2";
 import Card from "./Card/Card";
-import { cards } from "../Data/Data";
+import { serviceData } from "../Data/Data";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
@@ -62,9 +62,9 @@ const Services = () => {
       <div className="pb-5">
       {/* <Slider {...settings}> */}
       <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
-        {cards.map((service,index)=>{
+        {serviceData.map((service,index)=>{
             return(
-          <Link to={`/service/${service.title}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
+          <Link to={`/service/${service.id}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
             )
         })}
         </Carousel>

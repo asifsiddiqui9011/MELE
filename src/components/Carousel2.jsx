@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCards, Pagination, Navigation, Autoplay } from "swiper/modules";
 import Arrow from "../assets/Arrow.svg";
-import { cards } from "../Data/Data.jsx";
+import { serviceData } from "../Data/Data.jsx";
 
 const Container = styled.div`
   position: relative;
@@ -104,7 +104,7 @@ const Carousel2 = () => {
         modules={[EffectCards, Pagination, Navigation, Autoplay]}
         className="h-full w-full"
       >
-        {cards.map((card, index) => (
+        {serviceData.map((card, index) => (
           <SwiperSlide
             key={index}
             className="bg-white p-6 flex-col transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-blue-300 hover:via-lightblue hover:to-pink-300 rounded-2xl flex justify-center items-center"

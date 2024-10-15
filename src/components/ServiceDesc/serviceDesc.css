@@ -6,9 +6,9 @@
     background: linear-gradient( 140deg, #202d3e, #0f2e53 , #3f8dec);
     overflow: hidden; /* Brown background with transparency */
 }
-.project-container{
-    height: 250vh;
-}
+/* .project-container{
+ 
+} */
 .background-img {
     width: 80%;
     height: 70%;
@@ -20,6 +20,7 @@
     top: 50%;
     left: 48%;
     transform: translate(-50%, -50%);
+    text-align: center;
     
 
 }
@@ -37,8 +38,8 @@
 }
 .service-intro {
     max-width: 800px; /* Set a maximum width for better readability */
-    margin: 20px auto; /* Center the div horizontally */
-    padding: 2px; /* Add padding for spacing */
+    margin: 0px auto;
+    padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center align the text */
     font-size: 1.2rem; /* Adjust font size */
     line-height: 1.5; /* Increase line height for readability */
