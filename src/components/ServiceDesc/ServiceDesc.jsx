@@ -10,6 +10,7 @@ import { useParams } from 'react-router-dom';
 import { serviceData } from '../../Data/Data';
 import Services from '../Services';
 import BookNow from '../BookNow';
+import ServiceCarousel from '../ServiceCarousel';
 
 
 const ServiceDesc = () => {
@@ -138,8 +139,9 @@ const ServiceDesc = () => {
 
       
       {/*Other Services */}
-      <div>
-          <Services/>
+      <div className='bg-white text-center p-5'>
+        <h1 className='section-title pt-2 text-sky-950'>Explore Other Services</h1>
+          <ServiceCarousel/>
       </div>
     </div>
   );

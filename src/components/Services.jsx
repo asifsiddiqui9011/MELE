@@ -1,12 +1,12 @@
 import React from "react";
 //import Carousel from "./Carousel";
 import StatsSection from "./StatsSection";
-import Carousel2 from "./Carousel2";
 import Card from "./Card/Card";
 import { serviceData } from "../Data/Data";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
+import ServiceCarousel from "./ServiceCarousel";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -54,22 +54,8 @@ const Services = () => {
           clients.
         </p>
       </div>
-
-      {/* <div className="flex items-center justify-center pb-10">
-        <Carousel2 />
-      </div> */}
-
-      <div className="pb-5">
-      {/* <Slider {...settings}> */}
-      <Carousel responsive={responsive} arrows={true} keyBoardControl={true} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
-        {serviceData.map((service,index)=>{
-            return(
-          <Link to={`/service/${service.id}`} key={index}>  <Card  img={service.image} title={service.title} desc={service.desc}  style={{WebkitLineClamp:4}}/></Link>
-            )
-        })}
-        </Carousel>
-        {/* </Slider>    */}
-      </div>
+      
+      <ServiceCarousel/>
      
      
     </div>
