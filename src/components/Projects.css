@@ -1,0 +1,62 @@
+/* Continuous border animation around the button */
+.animated-border-button {
+    position: relative;
+    padding: 12px 24px;
+    background-color: #6b46c1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .animated-border-button .border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, #6b46c1, #a855f7);
+    border-image-slice: 1;
+    animation: borderMove 2s linear infinite;
+    z-index: 1;
+    border-radius: 9999px;
+  }
+  
+  @keyframes borderMove {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Improve dot styling */
+  .carousel-container ul.react-multi-carousel-dot-list {
+    position: relative;
+    bottom: -20px; /* Adjust position to avoid overlap */
+  }
+  
+  .carousel-container ul.react-multi-carousel-dot-list li {
+    display: inline-block;
+    margin: 0 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d1d5db; /* Gray for inactive dots */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .carousel-container ul.react-multi-carousel-dot-list li:hover {
+    background-color: #6b46c1; /* Hover effect for dots */
+  }
+  
+  .carousel-container ul.react-multi-carousel-dot-list .react-multi-carousel-dot--active {
+    background-color: #6b46c1; /* Purple for active dot */
+  }
+  

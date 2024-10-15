@@ -1,0 +1,49 @@
+.project-title {
+    position: relative;
+    /* margin-top: 5rem; */
+    width: 100%;
+    height: 68vh;
+    background: linear-gradient( 140deg, #202d3e, #0f2e53 , #3f8dec);
+    overflow: hidden; /* Brown background with transparency */
+}
+.project-container{
+    height: 250vh;
+}
+.background-img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.project-overlay h1 {
+    color: rgb(247, 246, 249); /* Text color */
+    font-size: 3.5rem;
+    font-weight: 400; /* Font size */
+    text-shadow: 2px 4px 4px rgba(52, 108, 211, 0.7); /* Adds a shadow for better visibility */
+}
+.project-overlay h3{
+    color: white;
+    text-shadow: 2px 2px 4px rgba(155, 175, 196, 0.7); 
+    margin-left: 3.5rem;
+    font-size: larger;
+}
+.service-intro {
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin: 20px auto; /* Center the div horizontally */
+    padding: 2px; /* Add padding for spacing */
+    text-align: center; /* Center align the text */
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.5; /* Increase line height for readability */
+    color: #333; /* Set text color */
+    border-radius: 8px; /* Add rounded corners */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); */
+}
+
