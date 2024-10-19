@@ -1,0 +1,75 @@
+.type-container {
+    background : linear-gradient(120deg,lightblue,white) ;/* Light background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.96);
+    margin: 20px auto;
+    /* max-width: 600px; */
+    width: 20rem;
+    height: 20rem;
+    box-sizing: border-box; /* Include padding in element width/height */
+    overflow: hidden; /* Hide any overflow content */
+}
+.type-desc ul {
+    list-style-type: disc; /* You can change this to circle, square, or any other type */
+    margin: 10px 0 0 20px; /* Add some space between the list and the description */
+  }
+  
+  .type-desc li {
+    margin-bottom: 8px; /* Spacing between each list item */
+    color: #333; /* Text color for the list items */
+    font-size: 16px; /* Font size for better readability */
+  }
+  
+
+.service-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 2px solid #313030; */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.service-heading h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-heading img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.type-desc {
+    font-size: 16px;
+    color: #222121;
+    line-height: 1.6;
+    word-wrap: break-word; /* Prevent long words from overflowing */
+    overflow-wrap: break-word; /* Ensure text breaks correctly */
+    margin: 0;
+    padding-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .service-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-heading img {
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .type-container {
+        padding: 15px;
+    }
+
+    .service-heading h1 {
+        font-size: 20px;
+    }
+}

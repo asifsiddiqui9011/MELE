@@ -1,35 +1,49 @@
-const serviceDesc = [
+export const servicesData = [
     {
-        title:"Web development",
-        types:[
-            "front end",
-            "back end",
-            "Full stack"
-        ],
-        keyFeatures:[
-            "intuative user interface",
-            "seamless integration of frontend backend and databases",
-            " complete deployed web application able to handle enormous users "
-        
-        ],
-        tools:[
-            ""
-        ]
-
-    }
-]
-
-export const toggleList = [
-    {
-        title:'front End Development',
-        content:'Utilizing modern frameworks like React, Angular, or Vue.js to create responsive and engaging user interfaces.'
+      id: 1,
+      title: "Dynamic Websites",
+      description: "Dynamic websites generate pages in real-time, ensuring they can change based on user inputs or other factors like location or preferences.",
+      
+      features: [
+        "Content management systems (CMS)",
+        "Database-driven content",
+        "Interactive user experience"
+      ]
     },
     {
-        title:'Backend End Development',
-        content:'Leveraging Node.js, Express.js, and databases like MongoDB and SQL to build robust server-side applications.'
+      id: 2,
+      title: "Single Page Applications (SPA)",
+      description: "SPAs load a single HTML page and dynamically update content as the user interacts with the app. This reduces page reloads and enhances user experience.",
+    
+      features: [
+        "Improved performance",
+        "JavaScript-heavy front-end",
+        "API-driven data"
+      ]
     },
     {
-        title:'API Development',
-        content:'Designing and implementing RESTful and GraphQL APIs for seamless integration with third-party services'
+      id: 3,
+      title: "Progressive Web Applications (PWA)",
+      description: "PWAs combine the best of web and mobile apps, providing offline access, push notifications, and faster loading times.",
+      
+      features: [
+        "Offline availability",
+        "Push notifications",
+        "App-like experience",
+      ]
+    },
+    {
+      id: 4,
+      title: "E-commerce Solutions",
+      description: "E-commerce websites allow businesses to sell products or services online, providing users with a seamless shopping experience from browsing to checkout.",
+      
+      features: [
+        "Secure payment gateway integration",
+        "Product management system",
+        "Analytics and tracking"
+      ]
     }
-]
+  ];
+
+
+  
