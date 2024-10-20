@@ -1,5 +1,5 @@
 import React from 'react';
-import './serviceTypes.css';
+import './ServiceTypes.css';
 
 const ServiceCard = ({ title, description, features }) => {
   return (

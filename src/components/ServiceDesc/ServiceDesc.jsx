@@ -3,9 +3,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';  // Import AOS styles
 import RightImg from "./web-frst-section.png";
 import leftImg from "./web-dev-second-sec.jpg";
-import './serviceDesc.css';
+import './ServiceDesc.css';
 import web1 from './web1.jpg';
-import ServiceTypes from './serviceTypes';
+import ServiceTypes from './ServiceTypes';
 import { useParams } from 'react-router-dom';
 import { serviceData } from '../../Data/Data';
 import BookNow from '../BookNow';
@@ -42,8 +42,8 @@ const ServiceDesc = () => {
 
   return (
     <div className='project-container'>
-      <div className="project-title flex flex-col md:flex-row items-center justify-between p-6 ">
-        <div className="header-left text-center md:text-left mb-4 md:mb-0">
+      <div className="project-title flex items-center justify-between flex-wrap p-5 ">
+        <div className="header-left text-center md:text-left mb-4 md:mb-0 ">
           <h1 className='project-headings text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-900 mb-2' data-aos="fade-right">Web Development</h1>
           <h3 className='project-headings text-lg md:text-2xl lg:text-3xl font-semibold mb-5' data-aos="fade-left">Transforming Ideas into Digital Solutions</h3>
           <button className='p-2 button w-1/2 md:w-1/4 transform transition-transform duration-300 hover:scale-105 hover:bg-blue-300 shadow-md hover:shadow-lg' data-aos="fade-right">Contact Us</button>
@@ -54,28 +54,28 @@ const ServiceDesc = () => {
       </div>
 
       <div className="service-section ">
-        <div className="service-intro bg-white ">
-          <div className="left-intro w-1/2 ">
+        <div className="service-intro p-10 bg-white flex justify-center align-center flex-wrap-reverse ">
+          <div className="left-intro w-1/2 " data-aos="fade-right">
             <h1 className='font-bold text-5xl '>Get the Best Solutions At Minimal Cost</h1>
-            <p className='font-medium mt-5'>
+            <p className='font-medium text-justify mt-5'>
             In today’s fast-paced digital landscape, having a robust online presence is no longer a luxury but a necessity for businesses of all sizes to thrive and remain relevant. At MELE, we go beyond just building websites—we create dynamic, responsive web applications that are designed to captivate and engage your target audience while driving measurable business growth. Our highly skilled development team tailors every solution to meet your unique business needs, combining cutting-edge technologies with a focus on user experience, scalability, and long-term performance. By choosing MELE, you're not just investing in a website, but in a strategic digital asset that will enhance user engagement, improve customer retention, and ultimately propel your business towards greater success in an increasingly competitive online environment.
             </p>
           </div>
           <div className="right-intro w-1/2 " >
-            <img src={web1} alt=""data-aos="fade-down" />
+            <img src={web1} alt=""data-aos="fade-left" />
           </div>
         </div>
 
-        <div className="service-types pt-8 flex bg-blue-100">
-          <div className="left-service w-1/2 pl-10">
+        <div className="service-types pt-8 flex justify-center align-center flex-wrap  bg-blue-100">
+          <div className="left-service">
             <h1 className='font-bold text-5xl '>Our Expertise</h1>
-            <h3 className='pt-5 pb-5 font-medium text-xl'>
+            <h3 className='p-3 font-medium text-xl flex flex-wrap'>
               We offer comprehensive web development solutions, including:
             </h3>
           </div>
         </div>
 
-        <div className="services-grid bg-white">
+        <div className="services-grid flex flex-wrap bg-white">
           {service.expertise.map((expertiseItem, index) => (
             <ServiceTypes 
               key={expertiseItem.id} 
@@ -92,7 +92,7 @@ const ServiceDesc = () => {
        
       </div>
 
-      <div className="service-desc-2 pl-8 flex  bg-yellow-100">
+      <div className="service-desc-2 pl-8 flex justify-center align-center flex-wrap bg-white">
         <div className="second-left-sec ml-4 object-cover" data-aos="fade-right">
           <img src={web4} alt="" className="h-80 w-80 " />
         </div>
