@@ -42,26 +42,31 @@ const ServiceDesc = () => {
 
   return (
     <div className='project-container'>
-      <div className="project-title flex items-center justify-between flex-wrap p-5 ">
-        <div className="header-left text-center md:text-left mb-4 md:mb-0 ">
-          <h1 className='project-headings text-3xl md:text-4xl lg:text-5xl font-bold text-indigo-900 mb-2' data-aos="fade-right">Web Development</h1>
-          <h3 className='project-headings text-lg md:text-2xl lg:text-3xl font-semibold mb-5' data-aos="fade-left">Transforming Ideas into Digital Solutions</h3>
-          <button className='p-2 button w-1/2 md:w-1/4 transform transition-transform duration-300 hover:scale-105 hover:bg-blue-300 shadow-md hover:shadow-lg' data-aos="fade-right">Contact Us</button>
+      <div className="project-title flex-col sm:pt-10 md:flex-row lg:flex-row p-5 lg:pt-10 pt-10">
+        <div className="header-left text-center  mb-4 md:mb-0 ">
+          <h1 className='project-headings sm:pt-10 text-5xl md:text-3xl lg:text-5xl font-bold text-indigo-900 mb-2 md:pt-10 ' data-aos="fade-right">Web Development</h1>
+          <h3 className='project-headings  md:text-2xl lg:text-3xl font-medium mb-5' data-aos="fade-left">Transforming Ideas into Digital Solutions</h3>
+          <div className="flex justify-center">
+      <button className="p-2 button w-1/2 md:w-1/3 transform transition-transform duration-300 hover:scale-105 hover:bg-blue-300 shadow-md hover:shadow-lg " data-aos="fade-right">
+        Contact Us
+      </button>
+      </div>
+
         </div>
-        <div className="header-right ml-0 md:ml-10 w-full md:w-1/2 lg:w-1/3">
+        <div className="header-right ml-0 md:ml-10 w-full md:w-1/4 h-1/4 lg:w-1/3">
           <img src={web3} alt="Web Development" className="w-full h-auto mx-auto md:max-w-s lg:max-w-sm" data-aos="fade-up" />
         </div>
       </div>
 
       <div className="service-section ">
-        <div className="service-intro p-10 bg-white flex justify-center align-center flex-wrap-reverse ">
-          <div className="left-intro w-1/2 " data-aos="fade-right">
+        <div className="service-intro p-10 bg-white flex flex-col lg:flex-row whitespace-mormal">
+          <div className="left-intro w-full lg:w-1/2 " data-aos="fade-right">
             <h1 className='font-bold text-5xl '>Get the Best Solutions At Minimal Cost</h1>
             <p className='font-medium text-justify mt-5'>
             In today’s fast-paced digital landscape, having a robust online presence is no longer a luxury but a necessity for businesses of all sizes to thrive and remain relevant. At MELE, we go beyond just building websites—we create dynamic, responsive web applications that are designed to captivate and engage your target audience while driving measurable business growth. Our highly skilled development team tailors every solution to meet your unique business needs, combining cutting-edge technologies with a focus on user experience, scalability, and long-term performance. By choosing MELE, you're not just investing in a website, but in a strategic digital asset that will enhance user engagement, improve customer retention, and ultimately propel your business towards greater success in an increasingly competitive online environment.
             </p>
           </div>
-          <div className="right-intro w-1/2 " >
+          <div className="right-intro w-full lg:w-1/2 " >
             <img src={web1} alt=""data-aos="fade-left" />
           </div>
         </div>
@@ -92,12 +97,12 @@ const ServiceDesc = () => {
        
       </div>
 
-      <div className="service-desc-2 pl-8 flex justify-center align-center flex-wrap bg-white">
-        <div className="second-left-sec ml-4 object-cover" data-aos="fade-right">
-          <img src={web4} alt="" className="h-80 w-80 " />
+      <div className="service-desc-2 pl-8 flex justify-center align-center flex-col lg:flex-row bg-white pr-10">
+        <div className="second-left-sec ml-4 object-cover w-full lg:w-1/2" data-aos="fade-right">
+          <img src={web4} alt="" />
         </div>
 
-        <div className="second-right-sec w-1/2  pr-9 pb-10">
+        <div className="second-right-sec w-full lg:w-1/2  pb-10">
           <h1 className='font-bold text-5xl mt-10'>Why Choose Us?</h1>
           <p className='pt-4 mb-10'>
             At MELE, we combine cutting-edge expertise with a client-centric approach to deliver high-quality, tailored web solutions that drive real business results. Our team is committed to understanding your unique needs and goals, ensuring that the solutions we provide are perfectly aligned with your vision. We don't just build websites; we create digital experiences that engage your target audience and inspire action. With a focus on scalability, performance, and the latest industry standards, we ensure that your web solutions are future-proof and ready to grow with your business. Our agile development process allows us to be flexible and adaptive, keeping you in the loop at every stage of the project. At MELE, your success is our mission, and we go above and beyond to transform your ideas into innovative digital products that stand out in today's competitive landscape.

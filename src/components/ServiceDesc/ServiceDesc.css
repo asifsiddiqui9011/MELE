@@ -1,125 +1,87 @@
-
-h1{
+h1 {
     color: rgb(13, 55, 90);
-    text-shadow:2px 4px 2px lightblue;
-    
-}
-.project-container{
-    /* height: 525vh;
-    overflow: hidden; */
+    text-shadow: 2px 4px 2px lightblue;
 }
 
-.service-desc-2{
+.project-container {
+    overflow: hidden;
+}
+
+.service-desc-2 {
     padding-top: 7rem;
+}
 
-}
-.second-right-sec{
-    margin-left: 10rem;
-}
-.second-left-sec img{
+.second-left-sec img {
     width: 35rem;
     height: 25rem;
-    /* margin-top: ; */
+    object-fit: contain;
 }
-.second-right-sec p{
+
+.second-right-sec p {
     line-height: 2;
 }
-.services-grid{
+
+.services-grid {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.2);
-    /* gap: 2rem; */
 }
-
 
 .project-title h1 {
-    
-    color: rgb(32, 7, 80); /* Text color */
-    font-size: 4.5rem;
-    
-
-    font-weight: 400; /* Font size */
-    text-shadow: 2px 4px 4px rgba(52, 108, 211, 0.7); /* Adds a shadow for better visibility */
+    color: rgb(32, 7, 80);
+    font-weight: 400;
+    text-shadow: 2px 4px 4px rgba(52, 108, 211, 0.7);
 }
 
-.project-title img{
-    
+.project-title img {
     border-radius: 7rem 5rem 5rem 1rem;
 }
-.project-title h3{
-    color: rgb(33, 4, 104);
 
-    margin-left: 7rem;
-    font-size: 1.5rem;
+.project-title h3 {
+    color: rgb(33, 4, 104);
+    margin-left: 2rem;
     line-height: 4rem;
 }
+
 .project-title {
     width: 100%;
     padding: 5rem;
-    background: linear-gradient(160deg,rgba(242, 243, 244, 0.26),rgb(230, 246, 248),rgba(22, 176, 253, 0.967));
-    /* background-color: rgb(2, 2, 37); */
+    background: linear-gradient(160deg, rgba(242, 243, 244, 0.26), rgb(230, 246, 248), rgba(22, 176, 253, 0.967));
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+}
 
-
-}
-.project-headings {
-    /* padding-left: 5rem; */
-    /* margin-left: 4rem; */
-    /* white-space: nowrap; */
-    /* margin-right: 5rem; */
-}
-.project-title h1 {
-    /* margin-top: 5rem; */
-    color: rgb(32, 7, 80); /* Text color */
-    font-size: 4.5rem;
-    /* margin-right: 4rem; */
-    font-weight: 400; /* Font size */
-    text-shadow: 2px 4px 4px rgba(52, 108, 211, 0.7); /* Adds a shadow for better visibility */
-}
 .service-intro {
- display: flex;
- justify-content:center;     
+    display: flex;
+    justify-content: center;
 }
 
-
-/* .right-intro img {
-    max-width: 100%;
-} */
-
-.service-intro h1{
+.service-intro h1 {
     color: rgb(13, 55, 90);
-    text-shadow:2px 4px 2px lightblue;
-    padding-bottom: 0.5rem;
+    text-shadow: 2px 4px 2px lightblue;
     line-height: 1.2;
-    /* white-space: nowrap; */
-
 }
-.service-intro p{
+
+.service-intro p {
     line-height: 1.8;
 }
-.header-right{
-    /* margin-left: 1rem;
-    
-    width: 45rem;
-     */
-}
 
-.button{
+.button {
     border: 2px solid rgb(237, 230, 230);
     background-color: rgba(29, 169, 184, 0.727);
     color: rgb(12, 7, 52);
     font-size: larger;
     font-weight: 600;
     border-radius: 2rem;
-    
 }
-.service-types{
+
+.service-types {
     text-align: center;
 }
-.service-types h3{
-    /* white-space: nowrap; */
+
+.service-types h3 {
 }
