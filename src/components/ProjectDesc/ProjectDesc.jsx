@@ -80,7 +80,7 @@ const ProjectDesc = () => {
       {/* Project Description Section */}
       <div className="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
         <h2 className="text-2xl font-semibold mb-4 text-gray-700">Project Overview</h2>
-        <p className="text-gray-600 leading-relaxed text-justify mb-6 font-light">
+        <p className="text-black  leading-relaxed text-justify mb-6 font-light">
           {project.description}
         </p>
 
@@ -88,7 +88,7 @@ const ProjectDesc = () => {
         {project.features && (
           <div>
             <h3 className="text-xl font-semibold mb-3 text-gray-700">Key Features:</h3>
-            <ul className="list-disc list-inside text-gray-600 pl-4 font-light" data-aos="fade-left">
+            <ul className=" text-black list-disc list-inside  pl-4 font-light" data-aos="fade-left">
               {project.features.map((feature, i) => (
                 <li key={i} className="mb-2">{feature}</li>
               ))}
@@ -98,9 +98,9 @@ const ProjectDesc = () => {
       </div>
 
       {/* Tech Stack Section */}
-      <div className="mt-12 p-6 bg-white rounded-lg shadow-md" data-aos="fade-up">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-700 text-center">Tech Stack Used</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="mt-12 p-6 bg-white rounded-lg shadow-md " data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-6 text-black text-center">Tech Stack Used</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-black">
           {project.techStack.map((tech, i) => (
             <div key={i} className="relative group perspective">
               <div className={`w-full h-full rounded-lg bg-gradient-to-r ${i % 2 === 0 ? 'from-blue-300 to-teal-200' : 'from-purple-300 to-pink-200'} transform transition-transform duration-300 group-hover:rotateX-6 group-hover:rotateY-6 group-hover:translate-y-[-10px] shadow-lg hover:shadow-2xl`}>
@@ -117,24 +117,24 @@ const ProjectDesc = () => {
 
       {/* User Reviews Section */}
       <div className="mt-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
-        <h2 className="text-2xl font-semibold mb-6 text-gray-700">User Reviews</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-black">User Reviews</h2>
         {project.reviews && project.reviews.length > 0 ? (
           project.reviews.map((review, index) => (
             <div key={index} className="mb-6">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="font-bold text-gray-800">{review.user}</h3>
+                <h3 className="font-bold text-black0">{review.user}</h3>
                 <div className="group">
                   {renderStars(review.rating)}
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-gray-500">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm text-black">
                     {review.rating} out of 5 stars
                   </div>
                 </div>
               </div>
-              <p className="text-gray-600 font-light">{review.review}</p>
+              <p className="text-black font-light">{review.review}</p>
             </div>
           ))
         ) : (
-          <p className="text-gray-600 font-light">No reviews available for this project yet.</p>
+          <p className="text-black font-light">No reviews available for this project yet.</p>
         )}
       </div>
 
@@ -142,7 +142,7 @@ const ProjectDesc = () => {
       <div className="mt-12 text-center" data-aos="fade">
         <a
           href="/"
-          className="inline-block bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition-all duration-300 font-medium"
+          className="  inline-block bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition-all duration-300 font-medium"
         >
           Back to Projects
         </a>
