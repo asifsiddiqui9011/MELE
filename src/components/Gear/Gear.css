@@ -1,0 +1,71 @@
+.gear-container{
+    /* color: color-mix(in srgb, rgb(255, 0, 0) 50%, rgb(15, 35, 255) 40%); */
+    /* color:color-mix(in hue shorter hue, rgb(255, 0, 0) 50%, rgb(15, 35, 255) 40%); */
+    color:mediumvioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+.gear{
+    font-size: 250px;
+    animation: spin 3s linear infinite,spinAndHide 5s forwards 5s ; 
+    
+}
+.gear2{
+    font-size: 150px;
+    animation: spin2 3s linear infinite,spinAndHide 5s forwards 5s ; 
+    position: relative;
+    top: 50px;
+    left: -10px;
+
+    
+}
+
+.teck{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.card-box {
+    position:relative;
+    top: -250px;
+    transform:scale(0); /* Initial state */
+    animation: blow 5s 5s forwards; /* Delayed animation */
+  }
+
+
+  @keyframes blow {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+  }
+  
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes spin2 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+@keyframes hide {
+    from {transform: scale(1); opacity: 1;}
+    to { transform: scale(0); opacity: 0; }
+} 
+
+@keyframes mini{
+    from{transform: scale(1);}
+    to{transform:scale(0);}
+}
+
+
+@keyframes spinAndHide {
+    from { transform: rotate(360deg) scale(1); opacity: 1; }
+    to { transform: rotate(0deg) scale(0); opacity: 0; }
+}  

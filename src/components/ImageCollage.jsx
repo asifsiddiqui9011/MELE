@@ -1,9 +1,9 @@
 import React from "react";
 
 // Import images from the assets folder
-import image1 from "../assets/1.webp";
-import image2 from "../assets/2.webp";
-import image3 from "../assets/3.webp";
+import image1 from "../assets/1.jpg";
+import image2 from "../assets/2.jpg";
+import image3 from "../assets/3.jpg";
 
 const images = [image1, image2, image3];
 

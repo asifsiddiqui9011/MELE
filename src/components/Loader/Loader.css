@@ -1,0 +1,39 @@
+.loader-container{
+    /* color: color-mix(in srgb, rgb(255, 0, 0) 50%, rgb(15, 35, 255) 40%); */
+    /* color:color-mix(in hue shorter hue, rgb(255, 0, 0) 50%, rgb(15, 35, 255) 40%); */
+    /* color:mediumvioletred; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+.loader1{
+    font-size: 250px;
+    animation: spin 3s linear infinite ; 
+    
+}
+.loader2{
+    font-size: 150px;
+    animation: spin2 3s linear infinite;
+    position: relative;
+    top: 50px;
+    left: -10px;
+
+    
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes spin2 {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+
+
+
+  
