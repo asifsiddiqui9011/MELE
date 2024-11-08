@@ -5,33 +5,36 @@ import { Link } from "react-router-dom";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './Projects.css'; // Import custom CSS for animations
+import ProjectsCarousel from "./ProjectsCarousel.jsx";
+
+
 
 const Projects = () => {
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    }
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5,
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1,
+  //   }
+  // };
 
   return (
     <div className="w-full bg-gradient-to-r from-gray-100 to-gray-200" id="portfolio">
       <HeaderSectionOfProject />
 
-      <div className="pb-10">
+      {/* <div className="pb-10">
         <Carousel
           responsive={responsive}
           arrows={true} // Always show arrows
@@ -64,20 +67,21 @@ const Projects = () => {
             );
           })}
         </Carousel>
-      </div>
+      </div> */}
+      <ProjectsCarousel/>
     </div>
   );
 };
 
-// Custom Dot Component for better styling
-const CustomDot = ({ onClick, ...rest }) => {
-  const { active } = rest;
-  return (
-    <li
-      className={`inline-block w-3 h-3 rounded-full mx-2 cursor-pointer ${active ? "bg-purple-600" : "bg-gray-400"}`}
-      onClick={() => onClick()}
-    />
-  );
-};
+// // Custom Dot Component for better styling
+// const CustomDot = ({ onClick, ...rest }) => {
+//   const { active } = rest;
+//   return (
+//     <li
+//       className={`inline-block w-3 h-3 rounded-full mx-2 cursor-pointer ${active ? "bg-purple-600" : "bg-gray-400"}`}
+//       onClick={() => onClick()}
+//     />
+//   );
+// };
 
 export default Projects;

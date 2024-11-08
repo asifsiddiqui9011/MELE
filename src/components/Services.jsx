@@ -7,6 +7,9 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
 import ServiceCarousel from "./ServiceCarousel";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
@@ -41,9 +44,16 @@ const Services = () => {
     }
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      offset: 100, // Offset before the animation starts
+    });
+  }, []);
+
   return (
     <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] " id="services">
-      <div className="section-title pt-2"> Our Services</div>
+      <div className="section-title pt-2" data-aos="fade-left"> Our Services</div>
 
       <div className="w-full p-6 ">
         <p className="text-center text-xl">

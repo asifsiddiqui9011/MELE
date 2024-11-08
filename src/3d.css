@@ -86,3 +86,39 @@
     margin: 0 10px; /* Reduced space between logos for smaller screens */
   }
 }
+
+
+/* InfiniteSlider.css */
+/* CircularSlider.css */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 5s linear infinite;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+/* CircularSlider.css */
+.slider-container {
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  white-space: nowrap;
+}
