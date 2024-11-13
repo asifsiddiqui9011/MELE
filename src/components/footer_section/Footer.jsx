@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import './footer.css';
-import { BsTelephone } from 'react-icons/bs';
-import { CiMail } from 'react-icons/ci';
+import { FaPhoneAlt } from "react-icons/fa"
+import { IoMdMail } from "react-icons/io"
 import { BiLogoInstagram } from 'react-icons/bi';
 import { FaXTwitter, FaLinkedinIn, FaFacebookF, FaArrowUp } from 'react-icons/fa6';
 import { Link as ScrollLink } from 'react-scroll'; // Importing ScrollLink
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [showArrow, setShowArrow] = useState(false);
@@ -37,13 +38,13 @@ const Footer = () => {
           <h4 className="text-lg text-white font-semibold mb-4 w-full">CONTACT US</h4>
           <p>Mandavelli<br />Near Kapaleshwar Temple,<br />Chennai, India</p>
           <p className="flex items-center mt-2">
-            <BsTelephone size={20} />
-            <span className="ml-2">:+91 9360231608</span>
+           
+            <span className=" flex flex-nowrap"> <FaPhoneAlt size={20} />:+919360231608</span>
           </p>
 
-          <div className="flex items-center">
-            <CiMail size={20} />
-            <span className="ml-2">:mele.ceo13@gmail.com</span>
+          <div className="flex items-center flex-nowrap">
+           
+            <Link to={'mailto:mele.ceo13@gmail.com'}><span className="flex flex-nowrap"> < IoMdMail size={20}  />:mele.ceo13@gmail.com</span></Link>
           </div>
         </div>
 
@@ -51,11 +52,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg text-white font-semibold mb-4 w-full">ABOUT US</h4>
           <ul>
-            <li><ScrollLink to="/" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Home</ScrollLink></li>
-            <li><ScrollLink to="about" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">About Us</ScrollLink></li>
-            <li><ScrollLink to="services" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Our Services</ScrollLink></li>
-            <li><ScrollLink to="/terms" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Terms & Condition</ScrollLink></li>
-            <li><ScrollLink to="/privacy" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Privacy Policy</ScrollLink></li>
+            <li><Link to="/" smooth={true} duration={500} offset={-100} className="hover:text-blue-400">Home</Link></li>
+            <li><ScrollLink to="about" smooth={true} duration={500} offset={-100} className="hover:text-blue-400"><Link to={'/'}>About Us</Link></ScrollLink></li>
+            <li><ScrollLink to="services" smooth={true} duration={500} offset={-100} className="hover:text-blue-400"><Link to={'/'}>Our Services</Link></ScrollLink></li>
+            <li><ScrollLink to="/terms" smooth={true} duration={500} offset={-100} className="hover:text-blue-400"><Link to={'/'}>Terms & Condition</Link></ScrollLink></li>
+            <li><ScrollLink to="/privacy" smooth={true} duration={500} offset={-100} className="hover:text-blue-400"><Link to={'/'}>Privacy Policy</Link></ScrollLink></li>
           </ul>
         </div>
 
@@ -63,11 +64,11 @@ const Footer = () => {
         <div>
           <h4 className="text-lg text-white font-semibold mb-4 w-full">USEFUL LINKS</h4>
           <ul>
-            <li><ScrollLink to="portfolio" smooth={true} duration={300} offset={-100} className="hover:text-blue-400">Portfolio</ScrollLink></li>
-            <li><ScrollLink to="/team" smooth={true} duration={300} offset={10} className="hover:text-blue-400">Team</ScrollLink></li>
-            <li><ScrollLink to="/career" smooth={true} duration={300} offset={10} className="hover:text-blue-400">Career</ScrollLink></li>
-            <li><ScrollLink to="contact" smooth={true} duration={300} offset={-60} className="hover:text-blue-400">Contact</ScrollLink></li>
-            <li><ScrollLink to="faq" smooth={true} duration={300} offset={-100} className="hover:text-blue-400">FAQ</ScrollLink></li>
+            <li><ScrollLink to="portfolio" smooth={true} duration={300} offset={-100} className="hover:text-blue-400"><Link to={'/'}>Portfolio</Link></ScrollLink></li>
+            <li><ScrollLink to="/team" smooth={true} duration={300} offset={10} className="hover:text-blue-400"><Link to={'/'}>Team</Link></ScrollLink></li>
+            <li><ScrollLink to="/career" smooth={true} duration={300} offset={10} className="hover:text-blue-400"><Link to={'/'}>Career</Link></ScrollLink></li>
+            <li><ScrollLink to="contact" smooth={true} duration={300} offset={-60} className="hover:text-blue-400"><Link to={'/'}>Contact</Link></ScrollLink></li>
+            <li><ScrollLink to="faq" smooth={true} duration={300} offset={-100} className="hover:text-blue-400"><Link to={'/'}>FAQ</Link></ScrollLink></li>
           </ul>
         </div>
 

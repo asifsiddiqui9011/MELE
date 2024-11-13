@@ -5,8 +5,7 @@ const HeaderSectionOfProject = () => {
     <div className="text-center py-10 px-4">
       {/* Title Section with Decorative Elements */}
       <div className="  relative inline-block mb-4">
-      <div className="section-title pt-2"> Our Projects</div>
-        {/* Decorative Brackets */}
+         <div className="section-title pt-2"> Our Projects</div>
        
       </div>
 

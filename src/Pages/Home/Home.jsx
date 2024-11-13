@@ -13,7 +13,7 @@ import Pricing from "../../components/Pricing";
 
 const Home = () => {
   return (
-    <div >
+    <section >
       <Hero />
       <About />
       <Services />
@@ -24,7 +24,7 @@ const Home = () => {
       <OurClients />
       <ContactUs />
       <FAQ />
-    </div>
+    </section>
   )
 }
 

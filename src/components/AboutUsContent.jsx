@@ -25,7 +25,7 @@ const AboutUsContent = () => {
 
       {/* Image Section */}
       <div
-        data-aos="fade-left"
+        data-aos="fade-up"
         className="lg:w-full flex justify-center lg:justify-end"
       >
         <img

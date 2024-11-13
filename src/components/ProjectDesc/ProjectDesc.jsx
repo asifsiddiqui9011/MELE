@@ -138,16 +138,7 @@ const ProjectDesc = () => {
           <p className="text-black font-light">No reviews available for this project yet.</p>
         )}
       </div>
-
-      {/* Back to Projects Button */}
-      {/* <div className="mt-12 text-center" data-aos="fade">
-        <a
-          href="/"
-          className="  inline-block bg-blue-500 text-white py-3 px-8 rounded-full hover:bg-blue-600 transition-all duration-300 font-medium"
-        >
-          Back to Projects
-        </a>
-      </div> */}
+      
       <div className=' text-center p-5'>
         <h1 className='section-title pt-2 text-sky-950' data-aos="fade-left">Explore Other Services</h1>
         <ProjectsCarousel/>
