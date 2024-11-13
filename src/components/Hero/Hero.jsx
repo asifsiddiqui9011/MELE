@@ -3,7 +3,7 @@ import { FaAngleRight } from "react-icons/fa6";
 // import ImageCollage from "./ImageCollage";
 import LogoTicker from "./LogoTicker";
 import { lazy,Suspense } from "react";
-import Loader from "./Loader/Loader";
+import Loader from "../Loader/Loader";
 
 const ImageCollage = lazy(()=>import("./ImageCollage"))
 

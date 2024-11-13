@@ -5,7 +5,7 @@ import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ProjectDesc.css';  // Import the CSS for infinite animation
-import ProjectsCarousel from '../ProjectsCarousel.jsx';
+import ProjectsCarousel from '../Project/ProjectsCarousel.jsx';
 
 // Helper function to render stars with horizontal layout and hover effect
 const renderStars = (rating) => {

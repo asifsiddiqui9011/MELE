@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';  // Import AOS styles
-import RightImg from "./web-frst-section.png";
-import leftImg from "./web-dev-second-sec.jpg";
 import './ServiceDesc.css';
-import web1 from './web1.jpg';
 import ServiceTypes from './ServiceTypes';
 import { useParams } from 'react-router-dom';
 import { serviceData } from '../../Data/Data';
 import BookNow from '../BookNow';
-import ServiceCarousel from '../ServiceCarousel';
+import ServiceCarousel from '../service/ServiceCarousel';
 import web3 from './web-3-rbg.png';
 import web4 from './web-frst-section.png';
 

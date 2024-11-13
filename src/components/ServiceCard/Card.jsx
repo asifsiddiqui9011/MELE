@@ -1,10 +1,4 @@
 import './Card.css'
-// import img from '../../assets/project/awslogo.png'
-// import cloud from '../../assets/cards/cloud.jpg'
-// import app from '../../assets/cards/app.jpg'
-// import web from '../../assets/cards/web.jpg'
-// import ml from '../../assets/cards/ml.jpg'
-// import uiux from '../../assets/cards/uxui.jpg'
 
 const Card = (props) => {
 

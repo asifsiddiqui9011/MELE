@@ -1,6 +1,6 @@
 
 import Footer from "./components/footer_section/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home/Home";
 import { Routes,Route } from "react-router-dom";
 import Career from "./Pages/Career/Career";

@@ -1,7 +1,7 @@
-import { serviceData } from "../Data/Data"
+import { serviceData } from "../../Data/Data"
 import Carousel from 'react-multi-carousel';
 import { Link } from "react-router-dom";
-import Card from "./Card/Card";
+import Card from "../ServiceCard/Card";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

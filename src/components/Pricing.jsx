@@ -1,5 +1,5 @@
 "use client";
-import { pricingTiers } from "../constants/index";
+import { pricingTiers } from "../PricingData/index";
 import { CheckIcon } from "@heroicons/react/16/solid";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";

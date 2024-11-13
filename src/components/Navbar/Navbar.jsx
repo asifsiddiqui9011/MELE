@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
-import Logo from "../assets/company_logo.png";
+import Logo from "../../assets/company_logo.png";
 import ResponsiveMenu from "./ResponsiveMenu";
 import {Link as ScrollLink} from "react-scroll"
 import {Link} from 'react-router-dom'

@@ -1,8 +1,8 @@
 "use client";
-import acmeLogo from "../assets/code.png";
-import quantumLogo from "../assets/ai.png";
-import echoLogo from "../assets/ml.png";
-import celestialLogo from "../assets/server.png";
+import acmeLogo from "../../assets/code.png";
+import quantumLogo from "../../assets/ai.png";
+import echoLogo from "../../assets/ml.png";
+import celestialLogo from "../../assets/server.png";
 import { useEffect,useState } from "react";
 
 import { motion } from "framer-motion";

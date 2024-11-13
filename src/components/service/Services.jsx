@@ -1,8 +1,8 @@
 import React from "react";
 //import Carousel from "./Carousel";
-import StatsSection from "./StatsSection";
-import Card from "./Card/Card";
-import { serviceData } from "../Data/Data";
+import StatsSection from "../StatsSection";
+import Card from "../ServiceCard/Card";
+import { serviceData } from "../../Data/Data";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from "react-router-dom";
