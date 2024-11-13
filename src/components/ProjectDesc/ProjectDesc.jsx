@@ -79,7 +79,7 @@ const ProjectDesc = () => {
       ></div>
 
       {/* Project Description Section */}
-      <div className="bg-white p-6 rounded-lg shadow-md" data-aos="fade-right">
+      <div className="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
         <h2 className="text-2xl font-semibold mb-4 text-gray-700">Project Overview</h2>
         <p className="text-black  leading-relaxed text-justify mb-6 font-light">
           {project.description}
@@ -89,7 +89,7 @@ const ProjectDesc = () => {
         {project.features && (
           <div>
             <h3 className="text-xl font-semibold mb-3 text-gray-700">Key Features:</h3>
-            <ul className=" text-black list-disc list-inside  pl-4 font-light" data-aos="fade-left">
+            <ul className=" text-black list-disc list-inside  pl-4 font-light" data-aos="fade-right">
               {project.features.map((feature, i) => (
                 <li key={i} className="mb-2">{feature}</li>
               ))}
@@ -140,7 +140,7 @@ const ProjectDesc = () => {
       </div>
       
       <div className=' text-center p-5'>
-        <h1 className='section-title pt-2 text-sky-950' data-aos="fade-left">Explore Other Services</h1>
+        <h1 className='section-title pt-2 text-sky-950' data-aos="fade-right">Explore Other Services</h1>
         <ProjectsCarousel/>
       </div>
      
