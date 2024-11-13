@@ -53,7 +53,7 @@ const Services = () => {
 
   return (
     <div className="w-full bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_60%)] " id="services">
-      <div className="section-title pt-2" data-aos="fade-left"> Our Services</div>
+      <div className="section-title pt-2" data-aos="fade-down"> Our Services</div>
 
       <div className="w-full p-6 ">
         <p className="text-center text-xl">
