@@ -65,7 +65,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 w-screen z-50">
+    <div className="fixed top-0 w-full z-50">
       <div className=" px-4 md:px-8 w-full">
         <div
           className={`flex items-center justify-between transition-all duration-300 ${
