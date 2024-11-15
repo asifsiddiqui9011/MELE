@@ -88,7 +88,7 @@ const ServiceDesc = () => {
 
 
       {/*service expertise */}
-        <div className="service-types pt-8 flex justify-center align-center flex-wrap  bg-blue-100">
+        <div className="service-types pt-8 flex justify-center align-center flex-wrap   bg-gradient-to-r from-blue-300 via-pink-200 to-violet-500">
           <div className="left-service">
             <h1 className='section-title '>Our Expertise</h1>
             <h3 className='p-3 font-medium text-xl flex flex-wrap'>
