@@ -80,7 +80,8 @@ const ProjectDesc = () => {
 
       {/* Tech Stack Section */}
       <div className="mt-12 mb-5 p-6 bg-white rounded-lg shadow-md " data-aos="fade-up">
-        <h2 className="text-2xl font-semibold mb-6 text-black text-center">Tech Stack Used</h2>
+        {/* <h2 className="text-2xl font-semibold mb-6 text-black text-center">Tech Stack Used</h2> */}
+        <h2 className='section-title pb-2 text-sky-750'>Tech Stack Used</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-black">
           {project.techStack.map((tech, i) => (
             <div key={i} className="relative group perspective">
