@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { projectsData } from "../../Data/Data.jsx";
+import './Projects.css'
 
 const ProjectsCarousel = () => {
 
@@ -47,7 +48,7 @@ const ProjectsCarousel = () => {
                     />
                   </div>
                   <h2 className="card-title text-gray-800 text-xl font-semibold mb-2">{project.title}</h2>
-                  <p style={{content:"normal",display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: 3,textAlign: 'justify',overflow:"hidden", textOverflow:"e;;ipsis",margin:"0px 10px 10px 10px"}}> 
+                  <p className="p-card-desc"> 
                     {project.description}
                   </p>
                   <button className="animated-border-button relative z-10 bg-white text-black  hover:text-white hover:bg-blue-500" style={{boxShadow:"2px 2px 10px rgba(0,0,0,0.2)"}}>

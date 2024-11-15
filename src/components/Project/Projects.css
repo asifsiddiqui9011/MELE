@@ -60,3 +60,24 @@
     background-color: #6b46c1; /* Purple for active dot */
   }
   
+
+  .card-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+  }
+
+
+  .p-card-desc{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin: 0px 10px 10px 10px;
+    content:"normal";
+  }
