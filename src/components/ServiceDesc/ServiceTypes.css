@@ -1,5 +1,6 @@
 .type-container {
-    background : linear-gradient(120deg,lightblue,white) ;/* Light background color */
+    /* background : linear-gradient(120deg,lightblue,white) ; */
+    background : linear-gradient(120deg,rgba(71, 168, 233, 0.711),rgba(221, 139, 230, 0.55)) ;/* Light background color */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.96);

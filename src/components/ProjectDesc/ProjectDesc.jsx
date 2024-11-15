@@ -78,8 +78,26 @@ const ProjectDesc = () => {
         }}
       ></div>
 
+      {/* Tech Stack Section */}
+      <div className="mt-12 mb-5 p-6 bg-white rounded-lg shadow-md " data-aos="fade-up">
+        <h2 className="text-2xl font-semibold mb-6 text-black text-center">Tech Stack Used</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-black">
+          {project.techStack.map((tech, i) => (
+            <div key={i} className="relative group perspective">
+              <div className={`w-full h-full rounded-lg bg-gradient-to-r ${i % 2 === 0 ? 'from-blue-300 to-teal-200' : 'from-purple-300 to-pink-200'} transform transition-transform duration-300 group-hover:rotateX-6 group-hover:rotateY-6 group-hover:translate-y-[-10px] shadow-lg hover:shadow-2xl`}>
+                <div className="absolute inset-0 rounded-lg bg-white opacity-20 blur-xl group-hover:blur-lg animate-pulse"></div>
+                <div className="relative p-6 flex flex-col items-center justify-center">
+                  <img src={tech.icon} alt={tech.name} className="w-12 h-12 md:w-16 md:h-16 mb-4 transform group-hover:scale-110 transition-transform duration-300" />
+                  <p className="text-gray-800 mt-2 text-center font-medium">{tech.name}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Project Description Section */}
-      <div className="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
+      <div className="bg-white mt-10 p-6 rounded-lg shadow-md" data-aos="fade-up">
         <h2 className="text-2xl font-semibold mb-4 text-gray-700">Project Overview</h2>
         <p className="text-black  leading-relaxed text-justify mb-6 font-light">
           {project.description}
@@ -98,23 +116,7 @@ const ProjectDesc = () => {
         )}
       </div>
 
-      {/* Tech Stack Section */}
-      <div className="mt-12 p-6 bg-white rounded-lg shadow-md " data-aos="fade-up">
-        <h2 className="text-2xl font-semibold mb-6 text-black text-center">Tech Stack Used</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-black">
-          {project.techStack.map((tech, i) => (
-            <div key={i} className="relative group perspective">
-              <div className={`w-full h-full rounded-lg bg-gradient-to-r ${i % 2 === 0 ? 'from-blue-300 to-teal-200' : 'from-purple-300 to-pink-200'} transform transition-transform duration-300 group-hover:rotateX-6 group-hover:rotateY-6 group-hover:translate-y-[-10px] shadow-lg hover:shadow-2xl`}>
-                <div className="absolute inset-0 rounded-lg bg-white opacity-20 blur-xl group-hover:blur-lg animate-pulse"></div>
-                <div className="relative p-6 flex flex-col items-center justify-center">
-                  <img src={tech.icon} alt={tech.name} className="w-12 h-12 md:w-16 md:h-16 mb-4 transform group-hover:scale-110 transition-transform duration-300" />
-                  <p className="text-gray-800 mt-2 text-center font-medium">{tech.name}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      
 
       {/* User Reviews Section */}
       <div className="mt-12 bg-white p-6 rounded-lg shadow-md" data-aos="fade-up">
