@@ -39,12 +39,12 @@ const Footer = () => {
           <p>Mandavelli<br />Near Kapaleshwar Temple,<br />Chennai, India</p>
           <p className="flex items-center mt-2">
            
-            <span className=" flex flex-nowrap"> <FaPhoneAlt size={20} />:+919360231608</span>
+            <span className="max-w-fit flex flex-nowrap" style={{minWidth:"146px"}}> <FaPhoneAlt size={20} />:+919360231608</span>
           </p>
 
           <div className="flex items-center flex-nowrap">
            
-            <Link to={'mailto:mele.ceo13@gmail.com'}><span className="flex flex-nowrap"> < IoMdMail size={20}  />:mele.ceo13@gmail.com</span></Link>
+            <Link to={'mailto:mele.ceo13@gmail.com'}><span className="flex flex-nowrap" style={{minWidth:"146px"}}> < IoMdMail size={20}  />:mele.ceo13@gmail.com</span></Link>
           </div>
         </div>
 
