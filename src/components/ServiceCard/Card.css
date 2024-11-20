@@ -59,6 +59,22 @@
     margin: 0px 10px 10px 10px;
 }
 
+@media(max-width:370px){
+    .card-desc{
+        text-align: center;
+    }
+    .card-caontainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-caontainer h1{
+        text-align: center;
+        -webkit-line-clamp: 2;
+    }
+
+}
+
 .readmore-btn{
     border-radius: 50px;
     padding: 8px;
