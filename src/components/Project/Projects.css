@@ -80,4 +80,23 @@
     text-overflow: ellipsis; 
     margin: 0px 10px 10px 10px;
     content:"normal";
+    text-align: center;
   }
+
+  @media(max-width:370px){
+    .p-card-desc{
+        font-size: 14px;
+        text-align:center
+    }
+    
+    .card-title{
+        font-size: 16px;
+    }
+
+}
+
+@media(min-width:765px){
+  .p-card-desc{
+    text-align:justify;
+}
+}

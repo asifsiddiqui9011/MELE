@@ -39,7 +39,7 @@ const ProjectsCarousel = () => {
           {projectsData.map((project, index) => {
             return (
               <Link to={`/project/${index}`} key={index}>
-                <div className="card-container bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out relative h-98 flex flex-col justify-between">
+                <div className="card-container min-w-40 bg-white rounded-xl p-6 m-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300 ease-in-out relative h-98 flex flex-col justify-between">
                   <div className="card-image-container mb-4 rounded-lg overflow-hidden">
                     <img
                       src={project.image}

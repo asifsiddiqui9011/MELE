@@ -61,16 +61,11 @@
 
 @media(max-width:370px){
     .card-desc{
-        text-align: center;
+        font-size: 12px
     }
-    .card-caontainer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    
     .card-caontainer h1{
-        text-align: center;
-        -webkit-line-clamp: 2;
+        font-size: 16px;
     }
 
 }
