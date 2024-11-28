@@ -66,9 +66,9 @@ const Footer = () => {
           <ul>
             <li><ScrollLink to="portfolio" smooth={true} duration={300} offset={-100} className="hover:text-blue-400"><Link to={'/'}>Portfolio</Link></ScrollLink></li>
             <li><ScrollLink to="/team" smooth={true} duration={300} offset={10} className="hover:text-blue-400"><Link to={'/'}>Team</Link></ScrollLink></li>
-            <li><ScrollLink to="/career" smooth={true} duration={300} offset={10} className="hover:text-blue-400"><Link to={'/'}>Career</Link></ScrollLink></li>
+            <li><Link to="/career" smooth={true} duration={300} offset={10} className="hover:text-blue-400">Career</Link></li>
             <li><ScrollLink to="contact" smooth={true} duration={300} offset={-60} className="hover:text-blue-400"><Link to={'/'}>Contact</Link></ScrollLink></li>
-            <li><ScrollLink to="faq" smooth={true} duration={300} offset={-100} className="hover:text-blue-400"><Link to={'/'}>FAQ</Link></ScrollLink></li>
+            <li><ScrollLink to="faqs" smooth={true} duration={300} offset={-100} className="hover:text-blue-400"><Link to={'/'}>FAQ</Link></ScrollLink></li>
           </ul>
         </div>
 
